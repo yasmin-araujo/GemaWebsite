@@ -23,7 +23,7 @@ function HomePage() {
 						{/* <Wallpaper /> */}
 					</Col>
 				</Row>
-				<Row>
+				<Row className="row-news">
 					<Col>
                     <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notícias</h3>
 						<NewsCard />

@@ -2,13 +2,24 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
-import Img1 from './tripleg.jpg';
-import Img2 from './time2.jpg';
-import Img3 from './fimdocoffee.jpg';
+import Button from 'react-bootstrap/Button';
+import Img1 from '../../images/tripleg.jpg';
+import Img2 from '../../images/time2.jpg';
+import Img3 from '../../images/fimdocoffee.jpg';
 
 import './style.css';
 
 export default function NewsCard() {
+
+    function redirect(props)
+    {
+        switch(props)
+        {
+            case "sobre": console.log("OI");
+            break;
+        }
+    }
+
 	return (
 		<div className="main">
 			<div className="cards">
@@ -16,40 +27,39 @@ export default function NewsCard() {
 					<Card border="warning">
 						<Card.Img variant="top" src={Img1} />
 						<Card.Body>
-							<Card.Title>Card title</Card.Title>
+							<Card.Title>Mais um ano de medalha para o GEMA!</Card.Title>
 							<Card.Text>
-								This is a wider card with supporting text below as a natural lead-in to additional
-								content. This content is a little bit longer.
+								O time "Triple G" foi muito bem na final nacional, ganhando medalhas de prata e com
+								chances de ir para a fase mundial!
 							</Card.Text>
 						</Card.Body>
 						<Card.Footer>
-							<small className="text-muted">Last updated 14/09/2019</small>
+							<Button variant="outline-warning" className="card-button" onClick="redirect(sobre)">Saiba mais</Button>
 						</Card.Footer>
 					</Card>
 					<Card border="warning">
 						<Card.Img variant="top" src={Img2} />
 						<Card.Body>
-							<Card.Title>Card title</Card.Title>
+							<Card.Title>O GEMA classificou para a nacional!</Card.Title>
 							<Card.Text>
-								This card has supporting text below as a natural lead-in to additional content.{' '}
+								Confira os times que conseguiram se classificar para a final brasileira da competição!{' '}
 							</Card.Text>
 						</Card.Body>
 						<Card.Footer>
-							<small className="text-muted">Last updated 09/11/2019</small>
+							<Button variant="outline-warning" className="card-button"  href="#">Saiba mais</Button>
 						</Card.Footer>
 					</Card>
 					<Card border="warning">
 						<Card.Img variant="top" src={Img3} />
 						<Card.Body>
-							<Card.Title>Card title</Card.Title>
+							<Card.Title>Sobre o GEMA</Card.Title>
 							<Card.Text>
-								This is a wider card with supporting text below as a natural lead-in to additional
-								content. This card has even longer content than the first to show that equal height
-								action.
+								Vennha saber mais sobre o <strong>G</strong>rupo de <strong>E</strong>studos para a{' '}
+								<strong>MA</strong>ratona de Programação!
 							</Card.Text>
 						</Card.Body>
 						<Card.Footer>
-							<small className="text-muted">Last updated 3 mins ago</small>
+							<Button variant="outline-warning" className="card-button"  href="#">Saiba mais</Button>
 						</Card.Footer>
 					</Card>
 				</CardDeck>

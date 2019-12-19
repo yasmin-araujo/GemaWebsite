@@ -19,7 +19,7 @@ export default function Header() {
 			<Navbar collapseOnSelect expand="lg" id="mainNav">
 				<Container>
 					<Navbar.Brand className="navbar-brand">
-						<img src={Logo} className="d-inline-block align-top logo"/>&nbsp;&nbsp; GEMA
+						<img alt="" src={Logo} className="d-inline-block align-top logo"/>&nbsp;&nbsp; GEMA
 					</Navbar.Brand>
 					<Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
