@@ -1,0 +1,16 @@
+.main{
+    width: 100vw;
+}
+.cards{
+    margin: 50px 5vw;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.h5{
+    overflow-y: hidden;
+}

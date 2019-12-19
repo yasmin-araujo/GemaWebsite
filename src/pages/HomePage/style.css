@@ -1,0 +1,24 @@
+.main {
+	margin: 0;
+	padding: 0;
+}
+
+#backg {
+	background-image: url(../../images/Wallpaper_grande.png);
+    height: 140vh;
+    width: 100vw;
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -45px;
+}
+
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+	width: 100%;
+	padding-right: 0;
+    padding-left: 0;
+}

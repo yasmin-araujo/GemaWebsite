@@ -1,0 +1,18 @@
+:root{
+    --color-1-light: #6844A4;
+    --color-1-medium: #5D2689;
+    --color-1-dark: #47297B;
+    --color-2-light: #FFE863;
+    --color-2-medium: #FFD93D;
+    --color-2-dark: #F5BD1F;
+    --color-shadow-1: #50505067; 
+    --color-3: #EBEBE8;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Roboto', Arial, sans-serif;
+    overflow-x: hidden;
+}
