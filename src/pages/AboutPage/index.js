@@ -1,13 +1,14 @@
 import React from 'react';
-import './style.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Header from '../../components/Header/index';
-import NewsCard from '../../components/NewsCard/index';
 import Footer from '../../components/Footer/index';
+
+import './style.css';
+
 // xs={12} sm={12} md={12} lg={12} xl={12}
-function HomePage() {
+function AboutPage() {
 	return (
 		<div className="main">
 			<Container fluid>
@@ -16,23 +17,12 @@ function HomePage() {
 						<Header />
 					</Col>
 				</Row>
-				<Row noGutters>
-					<Col auto>
-						<div id="backg" />
-					</Col>
-				</Row>
-				<Row className="row-news">
-					<Col>
-						<h3>Notícias</h3>
-						<NewsCard />
-					</Col>
-				</Row>
-				<Row>
-					<Footer />
-				</Row>
+                <Row className="footer-row">
+                        <Footer/>
+                </Row>
 			</Container>
 		</div>
 	);
 }
 
-export default HomePage;
+export default AboutPage;

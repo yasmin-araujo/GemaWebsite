@@ -1,0 +1,25 @@
+.main {
+	min-height: 100vh;
+}
+
+.header-space {
+	margin-top: 80px;
+}
+
+.title {
+	color: var(--color-1-medium);
+	text-align: center;
+	margin: 40px;
+	overflow-y: hidden;
+}
+
+.accordion-col {
+	margin: 0 150px 35px;
+}
+
+.footer-row {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}

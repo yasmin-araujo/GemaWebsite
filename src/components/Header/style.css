@@ -27,8 +27,9 @@ header {
 	background-color: var(--color-gray-2);
 }
 
-#mainNav .navbar-brand {
-	color: var(--color-1-medium);
+#mainNav .navbar-brand a{
+    color: var(--color-1-medium);
+    text-decoration: none;
 }
 
 #mainNav .navbar-brand.active,

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import Img1 from '../../images/tripleg.jpg';
 import Img2 from '../../images/time2.jpg';
 import Img3 from '../../images/fimdocoffee.jpg';
@@ -10,16 +9,6 @@ import Img3 from '../../images/fimdocoffee.jpg';
 import './style.css';
 
 export default function NewsCard() {
-
-    function redirect(props)
-    {
-        switch(props)
-        {
-            case "sobre": console.log("OI");
-            break;
-        }
-    }
-
 	return (
 		<div className="main">
 			<div className="cards">
@@ -34,7 +23,7 @@ export default function NewsCard() {
 							</Card.Text>
 						</Card.Body>
 						<Card.Footer>
-							<Button variant="outline-warning" className="card-button" onClick="redirect(sobre)">Saiba mais</Button>
+                            <Link to="/News">Saiba mais</Link>
 						</Card.Footer>
 					</Card>
 					<Card border="warning">
@@ -46,7 +35,7 @@ export default function NewsCard() {
 							</Card.Text>
 						</Card.Body>
 						<Card.Footer>
-							<Button variant="outline-warning" className="card-button"  href="#">Saiba mais</Button>
+                            <Link to="/News">Saiba mais</Link>
 						</Card.Footer>
 					</Card>
 					<Card border="warning">
@@ -59,7 +48,7 @@ export default function NewsCard() {
 							</Card.Text>
 						</Card.Body>
 						<Card.Footer>
-							<Button variant="outline-warning" className="card-button"  href="#">Saiba mais</Button>
+                            <Link to="/About">Saiba mais</Link>
 						</Card.Footer>
 					</Card>
 				</CardDeck>
