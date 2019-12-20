@@ -12,8 +12,8 @@ import './style.css';
 // xs={12} sm={12} md={12} lg={12} xl={12}
 function FaqPage() {
 	return (
-		<div className="main">
-			<Container fluid>
+		<div id="main-faq">
+			<Container fluid id="cont">
 				<Row>
 					<Col>
 						<Header />
@@ -26,7 +26,12 @@ function FaqPage() {
 					</Col>
 				</Row>
 				<Row>
-					<Col className="accordion-col">
+					<Col
+						md={{ span: 8, offset: 2 }}
+						sm={{ span: 10, offset: 1 }}
+						xs={{ span: 10, offset: 1 }}
+						className="accordion-col"
+					>
 						<Accordion>
 							<Card>
 								<Accordion.Toggle as={Card.Header} eventKey="0">
@@ -47,22 +52,23 @@ function FaqPage() {
 								</Accordion.Toggle>
 								<Accordion.Collapse eventKey="1">
 									<Card.Body>
-										C++. É usado pela grande maioria dos competidores e por
-										todos do GEMA. Quase todo material sobre programação competitiva estará em C++.
-										As aulas que organizamos para os bixos são nessa linguagem, e é a que
-										recomendamos para quem queira começar. <br />
+										C++. É usado pela grande maioria dos competidores e por todos do GEMA. Quase
+										todo material sobre programação competitiva estará em C++. As aulas que
+										organizamos para os bixos são nessa linguagem, e é a que recomendamos para quem
+										queira começar. <br />
 										<br />
-										A segunda linguagem mais utilizada é provavelmente Java.
-										Para fins de programação competitiva a mesma tem versatilidade similar a do C++,
-										mas em geral é mais lenta e requer que você digite mais, fatores que podem fazer
-										a diferença.<br /><br></br>
-										Outras linguagens, como Python, não são impossíveis de
-										serem utilizadas mas provavelmente apresentarão dificuldades a mais na
-										implementação de problemas mais complicados.<br /><br></br>
-										Excepcionalmente, vez ou outra aparece um problema que é
-										mais facilmente resolvido em Java ou Python do que em C++, ocasião em que muitos
-										competidores trocam temporariamente de linguagem para resolver aquele problema
-										em particular.
+										A segunda linguagem mais utilizada é provavelmente Java. Para fins de
+										programação competitiva a mesma tem versatilidade similar a do C++, mas em geral
+										é mais lenta e requer que você digite mais, fatores que podem fazer a diferença.<br
+										/>
+										<br />
+										Outras linguagens, como Python, não são impossíveis de serem utilizadas mas
+										provavelmente apresentarão dificuldades a mais na implementação de problemas
+										mais complicados.<br />
+										<br />
+										Excepcionalmente, vez ou outra aparece um problema que é mais facilmente
+										resolvido em Java ou Python do que em C++, ocasião em que muitos competidores
+										trocam temporariamente de linguagem para resolver aquele problema em particular.
 									</Card.Body>
 								</Accordion.Collapse>
 							</Card>
@@ -77,7 +83,7 @@ function FaqPage() {
 						</Accordion>
 					</Col>
 				</Row>
-				<Row className="footer-row">
+				<Row className="footer-row" >
 					<Footer />
 				</Row>
 			</Container>

@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '../../../src/images/logo.png';
-import Link from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -22,6 +21,7 @@ export default function Header() {
 						<Nav className="ml-auto navbar-nav">
 							<Nav.Link href="/About">Sobre</Nav.Link>
 							<Nav.Link href="/News">Notícias</Nav.Link>
+							<Nav.Link href="/Material">Materiais</Nav.Link>
 							<Nav.Link href="/Camp">Camp</Nav.Link>
 							<Nav.Link href="/FAQ">FAQ</Nav.Link>
 							<Nav.Link href="/Contact">Contato</Nav.Link>

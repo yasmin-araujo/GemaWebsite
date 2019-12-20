@@ -10,7 +10,7 @@ import './style.css';
 // xs={12} sm={12} md={12} lg={12} xl={12}
 function ContactPage() {
 	return (
-		<div className="main">
+		<div id="main-contact">
 			<Container fluid>
 				<Row>
 					<Col>

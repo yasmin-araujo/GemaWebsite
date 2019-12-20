@@ -1,0 +1,6 @@
+#main-contact {
+	min-height: 100vh;
+	background: rgb(231,215,238);
+    background: linear-gradient(180deg, rgba(231,215,238,1) 0%, rgba(255,255,255,1) 79%);
+    position: relative;
+}

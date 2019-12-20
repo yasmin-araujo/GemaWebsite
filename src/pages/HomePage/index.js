@@ -1,12 +1,15 @@
 import React from 'react';
-import './style.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Header from '../../components/Header/index';
 import NewsCard from '../../components/NewsCard/index';
 import Footer from '../../components/Footer/index';
+import ControlledCarousel from '../../components/ControlledCarousel/index';
+
+import './style.css';
 // xs={12} sm={12} md={12} lg={12} xl={12}
+
 function HomePage() {
 	return (
 		<div className="main">

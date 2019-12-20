@@ -4,6 +4,7 @@ import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './pages/HomePage/index';
 import AboutPage from './pages/AboutPage/index';
+import MaterialPage from './pages/MaterialPage/index';
 import CampPage from './pages/CampPage/index';
 import FaqPage from './pages/FaqPage/index';
 import NewsPage from './pages/NewsPage/index';
@@ -16,6 +17,7 @@ function App(){
             <Switch>
                 <Route exact path="/" component={HomePage} />
                 <Route path="/About" component={AboutPage} />
+                <Route path="/Material" component={MaterialPage} />
                 <Route path="/Camp" component={CampPage} />
                 <Route path="/FAQ" component={FaqPage} />
                 <Route path="/News" component={NewsPage} />

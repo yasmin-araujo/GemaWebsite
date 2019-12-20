@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
 import Img1 from '../../images/tripleg.jpg';
-import Img2 from '../../images/time2.jpg';
-import Img3 from '../../images/fimdocoffee.jpg';
+import Img2 from '../../images/time2.png';
+import Img3 from '../../images/gema_capa.png';
 
 import './style.css';
 
