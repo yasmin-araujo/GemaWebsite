@@ -1,0 +1,70 @@
+#card-close-button,
+#card-button {
+	color: var(--color-1-light);
+	border-color: var(--color-1-light);
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out,
+		box-shadow .15s ease-in-out;
+	align-self: flex-end;
+	justify-self: end;
+}
+
+#card-close-button:hover,
+#card-button:hover {
+	box-shadow: 0 0 10px var(--color-shadow-1);
+	background-color: transparent;
+	color: #ffc107;
+	border-color: #ffc107;
+}
+
+#card-buttonToolbar {
+	margin: -8px;
+	padding: 8px;
+}
+
+#card-images {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+}
+
+@media (max-width: 950px) {
+	#card-images {
+		flex-direction: column;
+	}
+}
+
+.image-card {
+	width: 45%;
+}
+
+#card-images > img {
+	width: 100%;
+}
+
+#news-body a {
+	color: var(--color-2-dark);
+}
+
+#news-body a:hover {
+	color: var(--color-2-medium);
+	text-decoration: none;
+}
+
+#news-body h4 {
+	overflow-y: hidden;
+}

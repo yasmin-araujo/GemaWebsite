@@ -77,7 +77,7 @@ function FaqPage() {
 									Preciso ser aluno do BCC / ICMC / … para participar do GEMA?
 								</Accordion.Toggle>
 								<Accordion.Collapse eventKey="2">
-									<Card.Body>Não. Ver Como participar?</Card.Body>
+									<Card.Body>Não. Ver <a id="link" href="/About#comoParticipar">Como participar?</a></Card.Body>
 								</Accordion.Collapse>
 							</Card>
 						</Accordion>

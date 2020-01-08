@@ -5,7 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Header from '../../components/Header/index';
 import NewsCard from '../../components/NewsCard/index';
 import Footer from '../../components/Footer/index';
-import ControlledCarousel from '../../components/ControlledCarousel/index';
+import Logo_Facebook from '../../images/facebook_icon.png';
+import Logo_Github from '../../images/github_icon.png';
 
 import './style.css';
 // xs={12} sm={12} md={12} lg={12} xl={12}
@@ -19,9 +20,28 @@ function HomePage() {
 						<Header />
 					</Col>
 				</Row>
-				<Row noGutters>
-					<Col auto>
-						<div id="backg" />
+				<Row>
+					<Col>
+						<div id="backg">
+							{/* <Container id="logo-container" fluid>
+								<Row>
+									<Col md={{ span: 4, offset: 4 }} sm={{ span: 4, offset: 4 }} xs={{ span: 4, offset: 4 }} id="logo-col">
+										<ul className="list-inline social-buttons">
+											<li className="list-inline-item">
+												<a href="https://www.facebook.com/gemaicmc/">
+													<img src={Logo_Facebook} alt="Facebook" className="logos" />
+												</a>
+											</li>
+											<li className="list-inline-item">
+												<a href="https://github.com/lusmoura/CompetitiveProgramming-Classes">
+													<img src={Logo_Github} alt="Github" className="logos" />
+												</a>
+											</li>
+										</ul>
+									</Col>
+								</Row>
+							</Container> */}
+						</div>
 					</Col>
 				</Row>
 				<Row className="row-news">

@@ -10,16 +10,21 @@ import './style.css';
 // xs={12} sm={12} md={12} lg={12} xl={12}
 function AboutPage() {
 	return (
-		<div className="main">
-			<Container fluid>
+		<div id="main-about">
+			<Container fluid id="cont">
 				<Row>
 					<Col>
 						<Header />
 					</Col>
 				</Row>
-                <Row className="footer-row">
-                        <Footer/>
-                </Row>
+				<Row>
+					<Col>
+						<h1 className="title">Sobre</h1>
+					</Col>
+				</Row>
+				<Row className="footer-row">
+					<Footer />
+				</Row>
 			</Container>
 		</div>
 	);

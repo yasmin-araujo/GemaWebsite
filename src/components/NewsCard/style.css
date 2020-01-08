@@ -21,6 +21,7 @@
 	align-items: center;
 	justify-items: end;
 	align-content: flex-end;
+    justify-content: space-between;
 }
 
 .card-footer > a {

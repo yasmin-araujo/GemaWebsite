@@ -11,10 +11,15 @@ import './style.css';
 function ContactPage() {
 	return (
 		<div id="main-contact">
-			<Container fluid>
+			<Container fluid id="cont">
 				<Row>
 					<Col>
 						<Header />
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<h1 className="title">Contato</h1>
 					</Col>
 				</Row>
                 <Row className="footer-row">

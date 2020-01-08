@@ -10,11 +10,16 @@ import './style.css';
 // xs={12} sm={12} md={12} lg={12} xl={12}
 function CampPage() {
 	return (
-		<div className="main">
-			<Container fluid>
+		<div id="main-camp">
+			<Container fluid id="cont">
 				<Row>
 					<Col>
 						<Header />
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<h1 className="title">Camp Training</h1>
 					</Col>
 				</Row>
                 <Row className="footer-row">
