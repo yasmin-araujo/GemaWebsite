@@ -1,7 +1,21 @@
 #main-about {
 	min-height: 100vh;
-	background: rgb(231,215,238);
-    background: linear-gradient(180deg, rgba(231,215,238,1) 0%, rgba(255,255,255,1) 79%);
+	background: rgb(231, 215, 238);
+	background: linear-gradient(180deg, rgba(231, 215, 238, 1) 0%, rgba(255, 255, 255, 1) 30%);
+}
+
+@media (max-width: 992px) {
+	#main-about {
+		background: rgb(231, 215, 238);
+		background: linear-gradient(180deg, rgba(231, 215, 238, 1) 0%, rgba(255, 255, 255, 1) 25%);
+	}
+}
+
+@media (max-width: 692px) {
+	#main-about {
+		background: rgb(231, 215, 238);
+		background: linear-gradient(180deg, rgba(231, 215, 238, 1) 0%, rgba(255, 255, 255, 1) 20%);
+	}
 }
 
 #main-about > #cont {
@@ -10,5 +24,171 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top: 80px;
+	margin-top: 90px;
+}
+
+#main-about hr {
+	border: none;
+	width: 100%;
+	color: transparent;
+	border-bottom: 3px double #e2e2e2;
+	height: 9px;
+	margin: 3em 0 1em;
+}
+
+#main-about h3 {
+    /* color: var(--color-1-medium); */
+    overflow-y: hidden;
+    margin: 30px 0;
+}
+
+#main-about h5 {
+    overflow-y: hidden;
+}
+
+#main-about a {
+    color: var(--color-2-dark);
+}
+
+#main-about a:hover {
+    color: var(--color-2-medium);
+    text-decoration: none;
+}
+
+#main-about #logo-row {
+	margin: 20px 5% 80px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#main-about #logo-row > div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+	#main-about #logo-row {
+        margin: 0 0 50px;
+        justify-content: center;
+    }
+
+    #main-about #logo-row > div {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+#main-about #logo-row > div > div {
+	padding: 10px;
+	background-color: whitesmoke;
+	border-radius: 10px;
+}
+
+#main-about #logo-phrase {
+	/* padding: 150px; */
+	margin-bottom: .5rem;
+	font-size: 1.5rem;
+	background-color: whitesmoke;
+	padding: 10px;
+	border-radius: 10px;
+	border: 8px double white;
+}
+
+@media (max-width: 576px) {
+	#main-about #logo-phrase {
+		font-size: 1.25rem;
+	}
+}
+
+#main-about #logo {
+	width: 60%;
+}
+
+@media (max-width: 993px) {
+	#main-about #logo {
+		width: 75%;
+		margin: 35px 0 50px;
+	}
+}
+
+@media (max-width: 1150px) {
+	#main-about #logo {
+		width: 75%;
+		/* margin: 0; */
+	}
+}
+
+#main-about #jumbo-about {
+	background-color: var(--color-1-extra-light);
+}
+
+#main-about .about-icons {
+	background-color: white;
+	border-radius: 100%;
+	height: 200px;
+	width: 200px;
+	margin: 10px 5px;
+}
+
+#main-about #icons-row {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+#main-about #icons-row > div {
+	flex: 0 0 210px;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-about #icons-row > div > a > p {
+    color: white;
+    margin: 5px 0 10px;
+}
+
+@media (max-width: 1066px) {
+	#main-about #icons-row > div {
+		flex: 0 0 30%;
+	}
+}
+
+@media (max-width: 795px) {
+	#main-about #icons-row > div {
+		flex: 0 0 210px;
+	}
+}
+
+@media (max-width: 576px) {
+	#main-about #icons-row > div {
+		flex: 0 0 80%;
+	}
+}
+
+.list-group-item-action {
+    text-align: center;
+}
+
+.list-group-horizontal .list-group-item+.list-group-item.active{
+    border-color: rgba(0,0,0,.125);
+    background-color: transparent;
+}
+
+#historico .list-group-item-action {
+    text-align: left;
+}
+
+.list-group-flush .list-group-item+.list-group-item.active{
+    border-color: rgba(0,0,0,.125);
+    background-color: transparent;
 }
