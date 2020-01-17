@@ -5,9 +5,33 @@
 }
 
 #main-material > #cont {
-	height: 100%;
+    height: 100%;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-top: 90px;
+}
+
+#main-material h5 {
+    overflow-y: hidden;
+    margin: 25px 0;
+}
+
+#main-material a {
+    color: var(--color-2-dark);
+}
+
+#main-material a:hover {
+    color: var(--color-2-medium);
+    text-decoration: none;
+}
+
+#main-material .list-group-item-action {
+    text-align: left;
+}
+
+#main-material .list-group-flush .list-group-item+.list-group-item.active+{
+    border-color: rgba(0,0,0,.125);
+    background-color: var(--color-gray-1);
 }

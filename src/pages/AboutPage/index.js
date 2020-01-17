@@ -17,6 +17,32 @@ import './style.css';
 
 // xs={12} sm={12} md={12} lg={12} xl={12}
 function AboutPage() {
+	let scrollTo0 = (e) => {
+		e.preventDefault();
+		let element = document.getElementById('maratona');
+		element.scrollIntoView({ behavior: 'smooth', block: "start"});
+	};
+	let scrollTo1 = (e) => {
+		e.preventDefault();
+		let element = document.getElementById('comoParticipar');
+		element.scrollIntoView({ behavior: 'smooth', block: "start"});
+	};
+	let scrollTo2 = (e) => {
+		e.preventDefault();
+		let element = document.getElementById('seletiva');
+		element.scrollIntoView({ behavior: 'smooth', block: "start"});
+	};
+	let scrollTo3 = (e) => {
+		e.preventDefault();
+		let element = document.getElementById('obi');
+		element.scrollIntoView({ behavior: 'smooth', block: "start"});
+	};
+	let scrollTo4 = (e) => {
+		e.preventDefault();
+		let element = document.getElementById('historico');
+		element.scrollIntoView({ behavior: 'smooth', block: "start"});
+	};
+
 	return (
 		<div id="main-about">
 			<Container fluid id="cont">
@@ -63,40 +89,40 @@ function AboutPage() {
 							<Container fluid>
 								<Row id="icons-row" noGutters>
 									<Col>
-										<a href="#maratona">
-											<div class="about-icons">
+										<a href="#" onClick={scrollTo0}>
+											<div className="about-icons">
 												<img src={Image} alt="" />{' '}
 											</div>
 											<p>O que é a Maratona?</p>
 										</a>
 									</Col>
 									<Col>
-										<a href="#comoParticipar">
-											<div class="about-icons">
+										<a href="#" onClick={scrollTo1}>
+											<div className="about-icons">
 												<img src={Image2} alt="" />{' '}
 											</div>
 											<p>Como Participar?</p>
 										</a>
 									</Col>
 									<Col>
-										<a href="#seletiva">
-											<div class="about-icons">
+										<a href="#" onClick={scrollTo2}>
+											<div className="about-icons">
 												<img src={Image3} alt="" />{' '}
 											</div>
 											<p>Seletiva</p>
 										</a>
 									</Col>
 									<Col>
-										<a href="#obi">
-											<div class="about-icons">
+										<a href="#" onClick={scrollTo3}>
+											<div className="about-icons">
 												<img src={Image4} alt="" />{' '}
 											</div>
 											<p>OBI</p>
 										</a>
 									</Col>
 									<Col>
-										<a href="#historico">
-											<div class="about-icons">
+										<a href="#" onClick={scrollTo4}>
+											<div className="about-icons">
 												<img src={Image5} alt="" />{' '}
 											</div>
 											<p>Histórico</p>
@@ -107,7 +133,7 @@ function AboutPage() {
 						</Jumbotron>
 					</Col>
 				</Row>
-				<Row id="maratona">
+				<Row id="maratona" >
 					<Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
 						<h3>O que é a Maratona?</h3>
 						<p>
@@ -144,11 +170,11 @@ function AboutPage() {
 							Essas competições NÃO são hackathons! Estas têm propostas e objetivos diferentes. Não
 							confunda!
 						</p>
-						<hr />
 					</Col>
 				</Row>
 				<Row id="comoParticipar">
 					<Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
+						<hr />
 						<h3>Como participar?</h3>
 						<p>
 							O GEMA não tem processo seletivo. Nós fazemos reuniões semanais onde discutimos problemas ou
@@ -170,11 +196,11 @@ function AboutPage() {
 							<strong>ou</strong> ganhar uma das vagas que damos aos bixos com melhor desempenho nas
 							nossas provas introdutórias.
 						</p>
-						<hr />
 					</Col>
 				</Row>
 				<Row id="seletiva">
 					<Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
+						<hr />
 						<h3>Seletiva</h3>
 						<p>
 							<strong>
@@ -218,11 +244,11 @@ function AboutPage() {
 								2015
 							</ListGroup.Item>
 						</ListGroup>
-						<hr />
 					</Col>
 				</Row>
 				<Row id="obi">
 					<Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
+						<hr />
 						<h3>OBI</h3>
 						<p>
 							<strong>
@@ -246,11 +272,11 @@ function AboutPage() {
 							competição é anual e normalmente começa no final do primeiro semestre. As provas são
 							realizadas no ICMC.
 						</p>
-						<hr />
 					</Col>
 				</Row>
 				<Row id="historico">
 					<Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
+						<hr />
 						<h3>Histórico</h3>
 						<h5>Notícias do GEMA pelo ICMC</h5>
 						<ListGroup variant="flush">

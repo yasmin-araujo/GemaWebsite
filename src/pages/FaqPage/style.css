@@ -13,7 +13,7 @@
 }
 
 #main-faq .header-space {
-    padding-top: 80px;
+	padding-top: 80px;
 }
 
 .title {
@@ -21,6 +21,11 @@
 	text-align: center;
 	margin: 20px;
 	overflow-y: hidden;
+}
+
+.accordion>.card>.card-header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card-header:hover {
@@ -31,9 +36,14 @@
 	color: var(--color-2-dark);
 }
 
-#link:hover{
-    text-decoration: none;
-    color: var(--color-2-medium);
+#link:hover {
+	text-decoration: none;
+	color: var(--color-2-medium);
+}
+
+.arrow {
+	min-width: fit-content;
+	color: var(--color-1-extra-light);
 }
 
 .footer-row {

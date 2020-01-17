@@ -35,7 +35,7 @@ function FaqPage() {
 						<Accordion>
 							<Card>
 								<Accordion.Toggle as={Card.Header} eventKey="0">
-									Quanta dedicação é necessária para participar do GEMA?
+									Quanta dedicação é necessária para participar do GEMA? <div className="arrow">▼</div>
 								</Accordion.Toggle>
 								<Accordion.Collapse eventKey="0">
 									<Card.Body>
@@ -48,7 +48,7 @@ function FaqPage() {
 							</Card>
 							<Card>
 								<Accordion.Toggle as={Card.Header} eventKey="1">
-									Qual linguagem de programação se usa em programação competitiva?
+									Qual linguagem de programação se usa em programação competitiva? <div className="arrow">▼</div>
 								</Accordion.Toggle>
 								<Accordion.Collapse eventKey="1">
 									<Card.Body>
@@ -74,16 +74,21 @@ function FaqPage() {
 							</Card>
 							<Card>
 								<Accordion.Toggle as={Card.Header} eventKey="2">
-									Preciso ser aluno do BCC / ICMC / … para participar do GEMA?
+									Preciso ser aluno do BCC / ICMC / … para participar do GEMA? <div className="arrow">▼</div>
 								</Accordion.Toggle>
 								<Accordion.Collapse eventKey="2">
-									<Card.Body>Não. Ver <a id="link" href="/About#comoParticipar">Como participar?</a></Card.Body>
+									<Card.Body>
+										Não. Ver{' '}
+										<a id="link" href="/About#comoParticipar">
+											Como participar?
+										</a>
+									</Card.Body>
 								</Accordion.Collapse>
 							</Card>
 						</Accordion>
 					</Col>
 				</Row>
-				<Row className="footer-row" >
+				<Row className="footer-row">
 					<Footer />
 				</Row>
 			</Container>

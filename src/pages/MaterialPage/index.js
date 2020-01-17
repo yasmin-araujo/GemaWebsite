@@ -1,7 +1,8 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import ListGroup from 'react-bootstrap/ListGroup';
 import Header from '../../components/Header/index';
 import Footer from '../../components/Footer/index';
 
@@ -22,9 +23,34 @@ function MaterialPage() {
 						<h1 className="title">Materiais</h1>
 					</Col>
 				</Row>
-                <Row className="footer-row">
-                        <Footer/>
-                </Row>
+				<Row>
+					<Col  sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
+						<h5>Links relevantes</h5>
+						<ListGroup variant="flush">
+							<ListGroup.Item action href="https://github.com/andrefakhoury">
+								GitHub do Fakhoury
+							</ListGroup.Item>
+							<ListGroup.Item action href="https://github.com/VictorXjoeY">
+								GitHub do Forbes
+							</ListGroup.Item>
+							<ListGroup.Item action href="https://github.com/LoppA">
+								GitHub do LoppA
+							</ListGroup.Item>
+							<ListGroup.Item action href="https://github.com/lusmoura">
+								GitHub da lmoura
+							</ListGroup.Item>
+							<ListGroup.Item action href="https://github.com/thiagop-usp">
+								GitHub do Preischadt
+							</ListGroup.Item>
+							<ListGroup.Item action href="https://github.com/davidcairuz">
+								GitHub do David
+							</ListGroup.Item>
+						</ListGroup>
+					</Col>
+				</Row>
+				<Row className="footer-row">
+					<Footer />
+				</Row>
 			</Container>
 		</div>
 	);

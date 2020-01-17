@@ -1,7 +1,14 @@
 #main-camp {
 	min-height: 100vh;
-	background: rgb(231,215,238);
-    background: linear-gradient(180deg, rgba(231,215,238,1) 0%, rgba(255,255,255,1) 79%);
+	background: rgb(231, 215, 238);
+	background: linear-gradient(180deg, rgba(231, 215, 238, 1) 0%, rgba(255, 255, 255, 1) 79%);
+}
+
+@media (max-width: 692px) {
+	#main-camp {
+		background: rgb(231, 215, 238);
+		background: linear-gradient(180deg, rgba(231, 215, 238, 1) 0%, rgba(255, 255, 255, 1) 50%);
+	}
 }
 
 #main-camp > #cont {
@@ -10,5 +17,38 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top: 80px;
+	margin-top: 90px;
+}
+
+#main-camp h3 {
+	overflow-y: hidden;
+    margin: 30px 0 20px;
+}
+
+#main-camp hr {
+	border: none;
+	width: 100%;
+	color: transparent;
+	border-bottom: 3px double #e2e2e2;
+	height: 9px;
+	margin: 3em 0 1em;
+}
+
+#main-camp p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#main-camp .camp-img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+#main-camp .camp-row{
+    align-items: center;
+}
+
+#main-camp .camp-row > div{
+    display: flex;
+    justify-content: center;
 }
