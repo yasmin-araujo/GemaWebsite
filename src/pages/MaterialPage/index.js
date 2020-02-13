@@ -23,8 +23,29 @@ function MaterialPage() {
 						<h1 className="title">Materiais</h1>
 					</Col>
 				</Row>
+				<br />
 				<Row>
-					<Col  sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
+					<Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
+						<h3>Introdução à Programação Competitiva</h3>
+						<p className="quote">
+							"Dado um problema de programação já conhecido, resolva ele no menor tempo possível."
+						</p>
+						<p>
+							O estudo em programação competitiva se baseia em várias técnicas e algoritmos. Além de
+							conhecê-los, também é importante uma constante prática, para que o tempo que se gasta em
+							cada problema seja menor.
+						</p>
+						<h4>Essências de um problema</h4>
+						<p>
+							Certo, você irá resolver um problema. Para se familiarizar melhor com eles, aqui vai um
+							resumo de como eles costumam aparecer. Normalmente, os enunciados de problemas apresentam a
+							seguinte forma:
+						</p>
+					</Col>
+				</Row>
+				<Row>
+					<Col id="links-col" sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
+						<hr />
 						<h5>Links relevantes</h5>
 						<ListGroup variant="flush">
 							<ListGroup.Item action href="https://github.com/andrefakhoury">

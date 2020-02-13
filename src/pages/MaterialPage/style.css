@@ -1,7 +1,7 @@
 #main-material {
 	min-height: 100vh;
 	background: rgb(231,215,238);
-    background: linear-gradient(180deg, rgba(231,215,238,1) 0%, rgba(255,255,255,1) 79%);
+    background: linear-gradient(180deg, rgba(231,215,238,1) 0%, rgba(255,255,255,1) 60%);
 }
 
 #main-material > #cont {
@@ -18,11 +18,41 @@
     margin: 25px 0;
 }
 
-#main-material a {
+#main-material h4 {
+    overflow-y: hidden;
+    margin: 30px 0 20px;
+}
+
+#main-material h3 {
+    overflow-y: hidden;
+    margin: 30px 0 20px;
+}
+
+#main-material hr {
+	border: none;
+	width: 100%;
+	color: transparent;
+	border-bottom: 3px double #e2e2e2;
+	height: 9px;
+	margin: 3em 0 3em;
+}
+
+#main-material .quote{
+    background-color: #f7f7f7;
+    color: #666;
+    text-align: center;
+    padding: 15px 10px;
+    margin: 30px 0;
+    border-radius: 10px;
+    /* font-size: 12px; */
+    font-style: italic;
+}
+
+#main-material #links-col a {
     color: var(--color-2-dark);
 }
 
-#main-material a:hover {
+#main-material #links-col a:hover {
     color: var(--color-2-medium);
     text-decoration: none;
 }

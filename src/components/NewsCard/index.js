@@ -9,6 +9,12 @@ import Img3 from '../../images/gema_capa.png';
 import './style.css';
 
 export default function NewsCard() {
+    let scrollToStart = (e) => {
+		// e.preventDefault();
+        let element = document.getElementById('backg');
+		element.scrollIntoView({ behavior: 'auto', block: "start"});
+    };
+    
 	return (
 		<div className="main">
 			<div className="cards">
@@ -23,7 +29,7 @@ export default function NewsCard() {
 							</Card.Text>
 						</Card.Body>
 						<Card.Footer>
-                            <Link to="/News">Saiba mais</Link>
+                            <Link to="/News" onClick={scrollToStart}>Saiba mais</Link>
 						</Card.Footer>
 					</Card>
 					<Card border="warning">
@@ -35,7 +41,7 @@ export default function NewsCard() {
 							</Card.Text>
 						</Card.Body>
 						<Card.Footer>
-                            <Link to="/News">Saiba mais</Link>
+                            <Link to="/News" onClick={scrollToStart}>Saiba mais</Link>
 						</Card.Footer>
 					</Card>
 					<Card border="warning">
@@ -48,7 +54,7 @@ export default function NewsCard() {
 							</Card.Text>
 						</Card.Body>
 						<Card.Footer>
-                            <Link to="/About">Saiba mais</Link>
+                            <Link to="/About" onClick={scrollToStart}>Saiba mais</Link>
 						</Card.Footer>
 					</Card>
 				</CardDeck>

@@ -11,6 +11,7 @@ import Img3 from '../../images/gema_capa.png';
 import './style.css';
 
 export default function NewsColumns() {
+    // Variáveis referentes a cada notícia, sendo 1 (mais antiga) até n (mais nova)
 	let n1 = getNews(1);
 	let n2 = getNews(2);
 
@@ -25,7 +26,7 @@ export default function NewsColumns() {
 				</Card.Body>
 				<Card.Footer>
 					<Modal title={n2.title} body={n2.body} image1={n2.image1} image2={n2.image2}/>
-					<small className="text-muted news-data">00/00/00</small>
+					<small className="text-muted news-data">00/00/19</small>
 				</Card.Footer>
 			</Card>
 			<Card>
@@ -36,7 +37,7 @@ export default function NewsColumns() {
 				</Card.Body>
 				<Card.Footer>
 					<Modal title={n1.title} body={n1.body} image1={n1.image1} image2={n1.image2}/>
-					<small className="text-muted news-data">00/00/00</small>
+					<small className="text-muted news-data">00/00/19</small>
 				</Card.Footer>
 			</Card>
             {/* Diferentes estilos de card como exemplo */}

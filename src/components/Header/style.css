@@ -27,9 +27,13 @@ header {
 	background-color: var(--color-gray-2);
 }
 
-#mainNav .navbar-brand a{
-    /* color: white; */
-    color: var(--color-1-medium);
+#mainNav .navbar-brand a {
+	color: var(--color-1-medium);
+	text-decoration: none;
+}
+
+#mainNav .navbar-brand a:hover {
+	color: var(--color-1-medium);
     text-decoration: none;
 }
 
@@ -47,7 +51,6 @@ header {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: var(--color-1-medium);
-	/* color: white; */
 }
 
 #mainNav .navbar-nav .nav-link.active,
@@ -68,21 +71,24 @@ header {
 		transition: padding-top 0.3s, padding-bottom 0.3s;
 		border: none;
 		background-color: var(--color-gray-1);
-		/* background-color: var(--color-1-medium); */
 		box-shadow: 0 2px 10px 2px var(--color-shadow-1);
-	}
+    }
+    
 	#mainNav .navbar-brand {
 		font-size: 1.75em;
 		transition: all 0.3s;
-	}
+    }
+    
 	#mainNav .navbar-nav .nav-item .nav-link {
 		padding: 1.1em 1em !important;
-	}
+    }
+    
 	#mainNav.navbar-shrink {
 		padding-top: 0;
 		padding-bottom: 0;
 		background-color: #212529;
-	}
+    }
+    
 	#mainNav.navbar-shrink .navbar-brand {
 		font-size: 1.25em;
 		padding: 12px 0;

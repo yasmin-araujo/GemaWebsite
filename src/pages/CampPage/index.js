@@ -43,7 +43,6 @@ function CampPage() {
 						</p>
 					</Col>
 					<Col md={{ span: 3, offset: 0 }} sm={{ span: 10, offset: 1 }}  xs={{ span: 10, offset: 1 }}>
-						{/* Imagem */}
 						<img className="camp-img" src={ImgCamp} alt="" />
 					</Col>
 					<Col sm={{ span: 1, order: 3}} xs={{ span: 1 , order: 3}}>
@@ -61,7 +60,6 @@ function CampPage() {
 				</Row>
 				<Row className="camp-row">
 					<Col md={{ span: 3, offset: 1, order: 1 }} sm={{ span: 10, offset: 1, order: 2 }} xs={{ span: 10, offset: 1, order: 2 }}>
-						{/* Imagem */}
 						<img className="camp-img" src={ImgPublico} alt="" />
 					</Col>
 					<Col md={{ span: 7, offset: 0, order: 2 }} sm={{ span: 10, offset: 1, order: 1 }} xs={{ span: 10, offset: 1, order: 1 }}>
@@ -93,7 +91,6 @@ function CampPage() {
 						<p>As inscrições para o curso esse ano já foram encerradas!</p>
 					</Col>
 					<Col md={{ span: 3, offset: 0}} sm={{ span: 10, offset: 1}} xs={{ span: 10, offset: 1}}>
-						{/* Imagem */}
 						<img className="camp-img" src={ImgInscricao} alt="" />
 					</Col>
 					<Col sm={{ span: 1, order: 3}} xs={{ span: 1 , order: 3}}>
