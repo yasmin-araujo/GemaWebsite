@@ -7,16 +7,18 @@ import Header from '../../components/Header/index';
 import Footer from '../../components/Footer/index';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Logo from '../../images/gema_logo.png';
-import Image from '../../images/teste.png';
-import Image2 from '../../images/teste2.png';
-import Image3 from '../../images/teste3.png';
-import Image4 from '../../images/teste4.png';
-import Image5 from '../../images/teste5.png';
+import Image from '../../images/icon.png';
+import Image2 from '../../images/icon2.png';
+import Image3 from '../../images/icon3.png';
+import Image4 from '../../images/icon4.png';
+import Image5 from '../../images/icon5.png';
 
 import './style.css';
 
 // xs={12} sm={12} md={12} lg={12} xl={12}
 function AboutPage() {
+
+    //Funções scroll para cada seção
 	let scrollTo0 = (e) => {
 		e.preventDefault();
 		let element = document.getElementById('maratona');

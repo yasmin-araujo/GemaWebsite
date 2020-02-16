@@ -2,6 +2,13 @@ import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
+//------------------
+//  Para adicionar imagens:
+//  1 - Importe a imagem como Imgx
+//  2 - Indexe a imagem colocando respectivo id x e link para a Imgx definida antes
+//  3 - Insira no array photos
+//------------------
+
 // Importação das imagens
 import Img1 from '../../images/time1.png';
 import Img2 from '../../images/time2.png';
@@ -17,15 +24,16 @@ photos.push(img1);
 photos.push(img2);
 photos.push(img3);
 
+// Retorna elemento imagem de acordo com o id fornecido
 function Image(props) {
 	if (props) {
-		console.log(props);
 		let img = photos.find((a) => a.id === props);
 		return <img alt="" src={img.image} />;
 	}
 	return;
 }
 
+// Modal recebendo id das fotos da respectiva notícia como props
 export default function MyVerticallyCenteredModal(props) {
 	return (
 		<Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>

@@ -25,6 +25,7 @@ export default function Header() {
 							<Nav.Link href="/Camp">Camp</Nav.Link>
 							<Nav.Link href="/FAQ">FAQ</Nav.Link>
 							<Nav.Link href="/Contact">Contato</Nav.Link>
+							<Nav.Link href="/Contest">CF Tool</Nav.Link>
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

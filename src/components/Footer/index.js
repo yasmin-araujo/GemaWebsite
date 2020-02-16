@@ -26,7 +26,7 @@ export default function Footer() {
 						</ul>
 					</div>
 					<div className="col-md-4 footer-item">
-						<span className="copyright">Made with ❤ by Yasmin Araujo</span>
+						<span className="copyright">Made with ❤ by <a className="footer-link" href="https://github.com/yasmin-araujo">Yasmin Araujo</a></span>
 					</div>
 				</div>
 			</div>

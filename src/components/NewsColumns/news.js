@@ -1,3 +1,11 @@
+//-----------
+//  Banco de notícias
+//
+//  Para adicionar:
+//  1 - Crie uma variável nxbody no final da lista e preencha com os dados necessários (caso a imagem não exista -> id = 0)
+//  2 - Adicione a nova variável no array news
+//-----------
+
 import React from 'react';
 let news = [];
 
@@ -52,6 +60,7 @@ let n2body = {
 news.push(n1body);
 news.push(n2body);
 
+// Retorna notícia de respectivo id recebido no props
 export default function getNews(props) {
 	let res = news.find((a) => a.id === props);
 	return res;

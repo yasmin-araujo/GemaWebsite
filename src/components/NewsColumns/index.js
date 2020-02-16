@@ -71,7 +71,7 @@ export default function NewsColumns() {
                         Insira aqui uma informação muito importante sobre o prestigiadíssimo grupo GEMA.{' '}
 					</Card.Text>
 					<Card.Text>
-						<small className="text-muted">Last updated 3 mins ago</small>
+						<small className="text-muted">Last updated some time ago</small>
 					</Card.Text>
 				</Card.Body>
 			</Card>
@@ -96,7 +96,7 @@ export default function NewsColumns() {
                         violetas são azuis, vamo vamo gema ganhar medalha que reluz.
 					</Card.Text>
 					<Card.Text>
-						<small className="text-muted">Last updated 3 mins ago</small>
+						<small className="text-muted">Last updated some time ago</small>
 					</Card.Text>
 				</Card.Body>
 			</Card>

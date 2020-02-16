@@ -9,19 +9,21 @@ import CampPage from './pages/CampPage/index';
 import FaqPage from './pages/FaqPage/index';
 import NewsPage from './pages/NewsPage/index';
 import ContactPage from './pages/ContactPage/index';
+import ContestPage from './pages/ContestPage/index';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App(){
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route path="/About" component={AboutPage} />
-                <Route path="/Material" component={MaterialPage} />
-                <Route path="/Camp" component={CampPage} />
-                <Route path="/FAQ" component={FaqPage} />
-                <Route path="/News" component={NewsPage} />
-                <Route path="/Contact" component={ContactPage} />
+                <Route exact path="/About" component={AboutPage} />
+                <Route exact path="/Material" component={MaterialPage} />
+                <Route exact path="/Camp" component={CampPage} />
+                <Route exact path="/FAQ" component={FaqPage} />
+                <Route exact path="/News" component={NewsPage} />
+                <Route exact path="/Contact" component={ContactPage} />
+                <Route exact path="/Contest" component={ContestPage} />
+                <Route path="/" component={HomePage} />
             </Switch>
         </ BrowserRouter>
     );

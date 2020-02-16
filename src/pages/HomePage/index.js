@@ -5,8 +5,8 @@ import Col from 'react-bootstrap/Col';
 import Header from '../../components/Header/index';
 import NewsCard from '../../components/NewsCard/index';
 import Footer from '../../components/Footer/index';
-import Logo_Facebook from '../../images/facebook_icon.png';
-import Logo_Github from '../../images/github_icon.png';
+// import Logo_Facebook from '../../images/facebook_icon.png';
+// import Logo_Github from '../../images/github_icon.png';
 
 import './style.css';
 // xs={12} sm={12} md={12} lg={12} xl={12}
