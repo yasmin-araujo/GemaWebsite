@@ -201,7 +201,7 @@ function ContestPage() {
 									<Form.Label>De:</Form.Label>
 								</Col>
 								<Col xs={9} sm={4} md={3}>
-									<Form.Control id="duration-min" value="0" />
+									<Form.Control id="duration-min" min="0" max="100000" placeholder="0" type="number" />
 								</Col>
 							</Form.Group>
 							<Form.Group as={Row} controlId="duration-max">
@@ -209,7 +209,7 @@ function ContestPage() {
 									<Form.Label> Até: </Form.Label>
 								</Col>
 								<Col xs={9} sm={4} md={3}>
-									<Form.Control id="duration-max" value="100000" />
+									<Form.Control id="duration-max" min="0" max="100000" placeholder="10000"  type="number" />
 								</Col>
 							</Form.Group>
 							<br />
