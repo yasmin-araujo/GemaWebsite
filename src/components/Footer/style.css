@@ -46,12 +46,14 @@ ul.social-buttons li a:hover {
 }
 
 .footer-link{
-    color: white;
+    /* color: white; */
+    color: rgb(242, 198, 253);
     text-decoration: none;
 }
 
 .footer-link:hover{
-    color: rgb(237, 167, 255);
+    /* color: rgb(237, 167, 255); */
+    color: rgb(234, 151, 255);
     text-decoration: none;
 }
 

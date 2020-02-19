@@ -4,15 +4,6 @@
     background: linear-gradient(180deg, rgba(231,215,238,1) 0%, rgba(255,255,255,1) 50%);
 }
 
-#main-news > #cont {
-	height: 100%;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-top: 80px;
-}
-
 @media (max-width: 992px){
     #main-news {
         background: rgb(231,215,238);
@@ -25,6 +16,15 @@
         background: rgb(231,215,238);
         background: linear-gradient(180deg, rgba(231,215,238,1) 0%, rgba(255,255,255,1) 20%);
     }
+}
+
+#main-news > #cont {
+	height: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 80px;
 }
 
 .news-div {

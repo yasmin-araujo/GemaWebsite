@@ -21,12 +21,18 @@
 	align-items: center;
 	justify-items: end;
 	align-content: flex-end;
-    justify-content: space-between;
+	justify-content: space-between;
 }
 
 .card-footer > a {
-	color: #ffc107;
-	border-color: #ffc107;
+	/* color: #ffc107;
+	border: 1px solid;
+	background-color: transparent;
+	border-color: #ffc107; */
+	color: #303030;
+	border: 1.3px solid;
+	border-color: transparent;
+	background-color: var(--color-2-extra-light);
 	display: inline-block;
 	font-weight: 400;
 	text-align: center;
@@ -34,8 +40,6 @@
 	vertical-align: middle;
 	cursor: pointer;
 	user-select: none;
-	background-color: transparent;
-	border: 1px solid;
 	padding: .375rem .75rem;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -46,6 +50,27 @@
 	justify-self: end;
 }
 
-.card-footer > a:hover {
-	box-shadow: 0 0 5px var(--color-shadow-1);
+.card-footer > a:hover,
+.card-footer btn-primary.focus,
+.card-footer .btn-primary:focus {
+	/* box-shadow: 0 0 5px var(--color-shadow-1); */
+	box-shadow: 0 0 10px var(--color-shadow-2);
+}
+
+.card-deck {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.card-deck .card {
+	box-shadow: 0 5px 10px var(--color-shadow-2);
+	margin-bottom: 15px;
+}
+
+@media (max-width: 575px) {
+	.card-deck .card {
+		box-shadow: 0 5px 10px var(--color-shadow-2);
+        margin-right: 10px;
+        margin-left: 10px;
+	}
 }

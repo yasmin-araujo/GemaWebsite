@@ -1,7 +1,13 @@
 #card-close-button,
 #card-button {
-	color: var(--color-1-light);
+	/* color: var(--color-1-light);
 	border-color: var(--color-1-light);
+	background-color: transparent;
+    border: 1px solid; */
+    color: #303030;
+	border: 1.3px solid;
+    border-color: transparent;
+    background-color: var(--color-2-extra-light);
 	display: inline-block;
 	font-weight: 400;
 	text-align: center;
@@ -9,8 +15,6 @@
 	vertical-align: middle;
 	cursor: pointer;
 	user-select: none;
-	background-color: transparent;
-	border: 1px solid;
 	padding: .375rem .75rem;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -18,15 +22,15 @@
 	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out,
 		box-shadow .15s ease-in-out;
 	align-self: flex-end;
-	justify-self: end;
+    justify-self: end;
 }
 
 #card-close-button:hover,
 #card-button:hover {
-	box-shadow: 0 0 10px var(--color-shadow-1);
-	background-color: transparent;
-	color: #ffc107;
-	border-color: #ffc107;
+	box-shadow: 0 0 10px var(--color-shadow-2);
+	/* background-color: transparent; */
+	/* color: #ffc107; */
+	/* border-color: #ffc107; */
 }
 
 #card-buttonToolbar {

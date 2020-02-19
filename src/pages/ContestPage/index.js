@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Header from '../../components/Header/index';
 import Footer from '../../components/Footer/index';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 import './style.css';
 
@@ -152,7 +154,7 @@ function ContestPage() {
 
 	// }
 	return (
-		<div id="main-camp">
+		<div id="main-contest">
 			<Container fluid id="cont">
 				<Row>
 					<Col>
@@ -161,34 +163,73 @@ function ContestPage() {
 				</Row>
 				<Row>
 					<Col>
-						<h3>Em construção</h3>
+						<h1 className="title">Contest Finder Tool</h1>
 					</Col>
-					{/* <h1>
-						{' '}
-						Encontre um contest para o seu time treinar{' '}
-						<img src="http://gema.icmc.usp.br/res/gema_light.svg" width="100px" />{' '}
-					</h1>
-					Lista de handles, separados por vírgula
-					<input id="handles" type="text" size="80" placeholder="Ex.: lucasturci, rodz, VictorForbes" />{' '}
-					<br />
-					<input type="checkbox" value="gym" id="gym" />{' '}
-					<span title="Se o contest é do gym ou não"> Gym </span> <br />
-					O nome tem que incluir:
-					<input id="includes" type="text" placeholder="Ex.: Educational" /> <br />
-					O nome tem que excluir:
-					<input id="excludes" type="text" placeholder="Ex.: VK Cup" /> <br />
-					Duração: De <input id="duration-min" value="0" type="text" /> a{' '}
-					<input id="duration-max" value="100000" /> minutos
-					<br />
-					<br />
-					<button id="search" onClick="search()">
-						Procurar
-					</button>
-					<button onClick="stopSearching()"> Parar procura </button>
-					<div>
-						<div id="status" />
-						<ul id="resposta" />
-					</div> */}
+				</Row>
+				<Row>
+					<Col id="form" sm={{ span: 8, offset: 2 }} xs={{ span: 8, offset: 2 }}>
+						<h3> Encontre um contest para o seu time treinar </h3>
+						<Form>
+							<Form.Group controlId="handles">
+								<Form.Label>Lista de handles, separados por vírgula:</Form.Label>
+								<Col>
+									<Form.Control id="handles" placeholder="Ex: lucasturci, rodz, VictorForbes" />
+								</Col>
+							</Form.Group>
+							<Form.Group controlId="gym">
+								<Form.Label>Contest é do Gym?</Form.Label>
+								<Col sm={4}>
+									<Form.Check inline label="Sim" type="radio" name="gymRadio" id="gym" />
+									<Form.Check inline label="Não" type="radio" name="gymRadio" id="noGym" checked />
+								</Col>
+							</Form.Group>
+							<Form.Group controlId="includes">
+								<Form.Label>O nome tem que incluir:</Form.Label>
+								<Col>
+									<Form.Control id="includes" placeholder="Ex: Educational" />
+								</Col>
+							</Form.Group>
+							<Form.Group controlId="excludes">
+								<Form.Label>O nome tem que excluir:</Form.Label>
+								<Col>
+									<Form.Control id="excludes" placeholder="Ex: VK Cup" />
+								</Col>
+							</Form.Group>
+							<Form.Label>Duração em minutos:</Form.Label>
+							<Form.Group as={Row} controlId="duration-min" inline>
+								<Col xs={3} sm={2} md={1}>
+									<Form.Label>De:</Form.Label>
+								</Col>
+								<Col xs={9} sm={4} md={3}>
+									<Form.Control id="duration-min" value="0" />
+								</Col>
+							</Form.Group>
+							<Form.Group as={Row} controlId="duration-max">
+								<Col xs={3} sm={2} md={1}>
+									<Form.Label> Até: </Form.Label>
+								</Col>
+								<Col xs={9} sm={4} md={3}>
+									<Form.Control id="duration-max" value="100000" />
+								</Col>
+							</Form.Group>
+							<br />
+							<Button id="search" onClick="search()" variant="outline-warning" type="submit">
+								Procurar
+							</Button>
+							&nbsp;&nbsp;
+							<Button onClick="stopSearching()" variant="outline-warning">
+								Parar procura
+							</Button>
+						</Form>
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<div>
+							<div id="status" />
+							<ul id="resposta" />
+						</div>
+					</Col>
 				</Row>
 				<Row className="footer-row">
 					<Footer />

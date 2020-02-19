@@ -19,7 +19,7 @@ export default function NewsCard() {
 		<div className="main">
 			<div className="cards">
 				<CardDeck>
-					<Card border="warning">
+					<Card>
 						<Card.Img variant="top" src={Img1} />
 						<Card.Body>
 							<Card.Title>Mais um ano de medalha para o GEMA!</Card.Title>
@@ -32,7 +32,7 @@ export default function NewsCard() {
                             <Link to="/News" onClick={scrollToStart}>Saiba mais</Link>
 						</Card.Footer>
 					</Card>
-					<Card border="warning">
+					<Card>
 						<Card.Img variant="top" src={Img2} />
 						<Card.Body>
 							<Card.Title>O GEMA classificou para a nacional!</Card.Title>
@@ -44,7 +44,7 @@ export default function NewsCard() {
                             <Link to="/News" onClick={scrollToStart}>Saiba mais</Link>
 						</Card.Footer>
 					</Card>
-					<Card border="warning">
+					<Card>
 						<Card.Img variant="top" src={Img3} />
 						<Card.Body>
 							<Card.Title>Sobre o GEMA</Card.Title>
