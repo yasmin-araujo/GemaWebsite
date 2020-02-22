@@ -26,7 +26,7 @@ export default function NewsColumns() {
 				</Card.Body>
 				<Card.Footer>
 					<Modal title={n2.title} body={n2.body} image1={n2.image1} image2={n2.image2}/>
-					<small className="text-muted news-data">00/00/19</small>
+					<small className="text-muted news-data">{n2.date}</small>
 				</Card.Footer>
 			</Card>
 			<Card>
@@ -37,7 +37,7 @@ export default function NewsColumns() {
 				</Card.Body>
 				<Card.Footer>
 					<Modal title={n1.title} body={n1.body} image1={n1.image1} image2={n1.image2}/>
-					<small className="text-muted news-data">00/00/19</small>
+					<small className="text-muted news-data">{n1.date}</small>
 				</Card.Footer>
 			</Card>
             {/* Diferentes estilos de card como exemplo */}

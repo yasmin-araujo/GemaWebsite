@@ -24,8 +24,7 @@ export default function NewsCard() {
 						<Card.Body>
 							<Card.Title>Mais um ano de medalha para o GEMA!</Card.Title>
 							<Card.Text>
-								O time "Triple G" foi muito bem na final nacional, ganhando medalhas de prata e com
-								chances de ir para a fase mundial!
+								O time "Triple G" foi muito bem na final nacional, ganhando medalhas de prata e uma vaga na fase mundial do ICPC!
 							</Card.Text>
 						</Card.Body>
 						<Card.Footer>

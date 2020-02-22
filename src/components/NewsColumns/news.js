@@ -30,31 +30,34 @@ let n1body = {
 		</>
     ),
     image1: 1,
-    image2: 2
+	image2: 2,
+	date: '15/02/2020'
 };
 
 let n2body = {
 	id: 2,
     title: 'Mais um ano de medalha para o GEMA!',
-    resume:  <> O time "Triple G" foi muito bem na final nacional, ganhando medalhas de prata e com chances de
-    ir para a fase mundial! </>,
+    resume:  <> O time "Triple G" foi muito bem na final nacional, ganhando medalhas de prata e uma vaga na fase mundial do ICPC! </>,
 	body: (
         <>
+		
 			A final nacional deste ano aconteceu em Campina Grande, nos dias 08 e 09 de novembro, com a participação de
 			70 times do país. Nesta fase, os times "Triple G" e "Um minuto para o fim do coffe" participaram, e
 			obtiveram ótimos resultados! Dos 13 problemas da prova, o time "Triple G" (à esquerda), integrado por
 			Guilherme "Tubone", Gabriel "Artista" Camargo e Gustavo "gsoares" Soares, conseguiu resolver 7, se
-			posicionando em sexto lugar e ganhando medalhas de prata, com chances de ir para a fase mundial!<br />
+			posicionando em sexto lugar e ganhando medalhas de prata. Com isso, o time classificou-se para a final mundial, 
+			que ocorrerá em junho de 2020 em Moscow, na Rússia! <br />
 			<br /> O time "Um minuto para o fim do coffee" (à direita), composto por André "Fakhoury", Frederico "Fred"
 			Bulhões e Raphael "Medeiros", solucionou 6 problemas, conseguindo o 12° no placar nacional! Você pode
-			acessar o ranking completo{' '}
+			acessar o ranking completo
 			<a href="http://scorelatam.naquadah.com.br/">aqui</a>. <br />
 			<br /> O GEMA consegue mais uma vez um ótimo resultado na Maratona de Programação, parabéns aos
 			competidores!
         </>
     ),
     image1: 3,
-    image2: 0 // imagem com índice 0 quando ela não existe
+	image2: 0, // imagem com índice 0 quando ela não existe
+	date: '15/02/2020'
 };
 
 news.push(n1body);
