@@ -43,6 +43,9 @@ function MaterialPage() {
 						<hr />
 						<h5>Links relevantes</h5>
 						<ListGroup variant="flush">
+						<ListGroup.Item action href="https://github.com/icmcgema">
+								GitHub do GEMA
+							</ListGroup.Item>
 							<ListGroup.Item action href="https://github.com/andrefakhoury">
 								GitHub do Fakhoury
 							</ListGroup.Item>
