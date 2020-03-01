@@ -204,12 +204,7 @@ function AboutPage() {
 					<Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
 						<hr />
 						<h3>Seletiva</h3>
-						<p>
-							<strong>
-								As inscrições para a Seletiva estão abertas! Basta preencher o formulário{' '}
-								<a href="#seletiva">aqui</a>. Ela será realizada dia ... no ....
-							</strong>
-						</p>
+						
 						<p>
 							Para determinar os alunos que irão representar a USP-São Carlos na{' '}
 							<a href="maratona">Maratona de Programação</a>, o GEMA promove uma prova presencial muito
@@ -252,12 +247,7 @@ function AboutPage() {
 					<Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
 						<hr />
 						<h3>OBI</h3>
-						<p>
-							<strong>
-								As inscrições para OBI estão abertas! Basta preencher o formulário{' '}
-								<a href="obi">aqui</a>. A primeira fase será dia … no ...
-							</strong>
-						</p>
+						
 						<p>
 							A <a href="http://olimpiada.ic.unicamp.br/">
 								OBI - Olimpíada de Brasileira de Informática
