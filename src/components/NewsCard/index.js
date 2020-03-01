@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
-import Img1 from '../../images/tripleg.jpg';
-import Img2 from '../../images/time2.png';
+import ImgAulas from '../../images/aulas_gema.jpg';
+import ImgApresentacao from '../../images/chamada_apresentacao.jpg'
 import Img3 from '../../images/gema_capa.png';
+import getNews from './../NewsColumns/news';
 
 import './style.css';
 
@@ -14,33 +15,32 @@ export default function NewsCard() {
         let element = document.getElementById('backg');
 		element.scrollIntoView({ behavior: 'auto', block: "start"});
     };
-    
+	
+	let n1 = getNews(1);
+	let n5 = getNews(5);
+
 	return (
 		<div className="main">
 			<div className="cards">
 				<CardDeck>
 					<Card>
-						<Card.Img variant="top" src={Img1} />
+						<Card.Img variant="top" src={ImgApresentacao} />
 						<Card.Body>
-							<Card.Title>Mais um ano de medalha para o GEMA!</Card.Title>
-							<Card.Text>
-								O time "Triple G" foi muito bem na final nacional, ganhando medalhas de prata e uma vaga na fase mundial do ICPC!
-							</Card.Text>
+							<Card.Title>{n5.title}</Card.Title>
+							<Card.Text>{n5.resume}</Card.Text>
 						</Card.Body>
 						<Card.Footer>
-                            <Link to="/News" onClick={scrollToStart}>Saiba mais</Link>
+							<Link to="/News" onClick={scrollToStart}>Saiba mais</Link>
 						</Card.Footer>
 					</Card>
 					<Card>
-						<Card.Img variant="top" src={Img2} />
+						<Card.Img variant="top" src={ImgAulas} />
 						<Card.Body>
-							<Card.Title>O GEMA classificou para a nacional!</Card.Title>
-							<Card.Text>
-								Confira os times que conseguiram se classificar para a final brasileira da competição!{' '}
-							</Card.Text>
+							<Card.Title>{n1.title}</Card.Title>
+							<Card.Text>{n1.resume}</Card.Text>
 						</Card.Body>
 						<Card.Footer>
-                            <Link to="/News" onClick={scrollToStart}>Saiba mais</Link>
+							<Link to="/News" onClick={scrollToStart}>Saiba mais</Link>
 						</Card.Footer>
 					</Card>
 					<Card>
@@ -48,7 +48,7 @@ export default function NewsCard() {
 						<Card.Body>
 							<Card.Title>Sobre o GEMA</Card.Title>
 							<Card.Text>
-								Vennha saber mais sobre o <strong>G</strong>rupo de <strong>E</strong>studos para a{' '}
+								Venha saber mais sobre o <strong>G</strong>rupo de <strong>E</strong>studos para a{' '}
 								<strong>MA</strong>ratona de Programação!
 							</Card.Text>
 						</Card.Body>
