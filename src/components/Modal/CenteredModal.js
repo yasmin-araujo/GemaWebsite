@@ -61,7 +61,7 @@ export default function MyVerticallyCenteredModal(props) {
 			</Modal.Body>
 			<Modal.Footer>
 				<Button id="card-close-button" onClick={props.onHide}>
-					Close
+					Fechar
 				</Button>
 			</Modal.Footer>
 		</Modal>
