@@ -35,12 +35,7 @@ function MaterialPage() {
 							conhecê-los, também é importante uma constante prática, para que o tempo que se gasta em
 							cada problema seja menor.
 						</p>
-						<h4>Essências de um problema</h4>
-						<p>
-							Certo, você irá resolver um problema. Para se familiarizar melhor com eles, aqui vai um
-							resumo de como eles costumam aparecer. Normalmente, os enunciados de problemas apresentam a
-							seguinte forma:
-						</p>
+						
 					</Col>
 				</Row>
 				<Row>

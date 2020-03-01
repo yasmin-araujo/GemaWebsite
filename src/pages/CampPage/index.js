@@ -88,7 +88,9 @@ function CampPage() {
 				</Row>
 				<Row className="camp-row">
 					<Col md={{ span: 7, offset: 1 }} sm={{ span: 10, offset: 1 }}  xs={{ span: 10, offset: 1 }}>
-						<p>As inscrições deste ano ainda não estão abertas.</p>
+						<p>O curso costuma acontecer em dezembro, fique ligado na nossa página no facebook para saber
+							quando as inscrições irão abrir.
+						</p>
 					</Col>
 					<Col md={{ span: 3, offset: 0}} sm={{ span: 10, offset: 1}} xs={{ span: 10, offset: 1}}>
 						<img className="camp-img" src={ImgInscricao} alt="" />
