@@ -13,16 +13,26 @@ import Button from 'react-bootstrap/Button';
 import Img1 from '../../images/time1.png';
 import Img2 from '../../images/time2.png';
 import Img3 from '../../images/tripleg.jpg';
+import ImgAulas from '../../images/aulas_gema.jpg'
+import ImgCamp from '../../images/camp_gema.jpg';
+import ImgApresentacao from '../../images/chamada_apresentacao.jpg'
+
 // Indexação das imagens
 let img1 = { id: 1, image: Img1 };
 let img2 = { id: 2, image: Img2 };
 let img3 = { id: 3, image: Img3 };
+let img4 = { id: 4, image: ImgAulas }
+let img5 = { id: 5, image: ImgCamp }
+let img6 = { id: 6, image: ImgApresentacao }
 
 let photos = [];
 
 photos.push(img1);
 photos.push(img2);
 photos.push(img3);
+photos.push(img4);
+photos.push(img5);
+photos.push(img6);
 
 // Retorna elemento imagem de acordo com o id fornecido
 function Image(props) {
