@@ -5,11 +5,13 @@ import Container from 'react-bootstrap/Container';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Header from '../../components/Header/index';
 import Footer from '../../components/Footer/index';
+import { useRouteMatch } from 'react-router-dom'
 
 import './style.css';
 
 // xs={12} sm={12} md={12} lg={12} xl={12}
 function MaterialPage() {
+	const { url } = useRouteMatch()
 	return (
 		<div id="main-material">
 			<Container fluid id="cont">
@@ -19,8 +21,15 @@ function MaterialPage() {
 					</Col>
 				</Row>
 				<Row>
-					<Col>
+					<Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
 						<h1 className="title">Materiais</h1>
+						<ListGroup id='material-links'>
+							<ListGroup.Item action href={`${url}/Aula/Introducao`}> Introdução </ListGroup.Item>
+							<ListGroup.Item action href={`${url}/Aula/Programacao_C-C++`}>Programação C/C++</ListGroup.Item>
+							<ListGroup.Item action href={`${url}/Aula/Repeticao`}>Repetição</ListGroup.Item>
+							<ListGroup.Item action href={`${url}/Aula/Arrays_Strings`}>Arrays e Strings</ListGroup.Item>
+							<ListGroup.Item action href={`${url}/Aula/Funcoes_Recursao`}>Funções e Recursão</ListGroup.Item>
+						</ListGroup>
 					</Col>
 				</Row>
 				<br />

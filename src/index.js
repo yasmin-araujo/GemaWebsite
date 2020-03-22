@@ -10,14 +10,17 @@ import FaqPage from './pages/FaqPage/index';
 import NewsPage from './pages/NewsPage/index';
 import ContactPage from './pages/ContactPage/index';
 import ContestPage from './pages/ContestPage/index';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import { Switch, Route } from 'react-router'
+import LessonPage from './pages/MaterialPage/LessonPage'
 
 function App(){
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path="/About" component={AboutPage} />
-                <Route exact path="/Material" component={MaterialPage} />
+                <Route exact path="/About" component={AboutPage}/>
+                <Route exact path="/Material" component={MaterialPage}/>
+                <Route exact path="/Material/Aula/:title" component={LessonPage}/>
                 <Route exact path="/Camp" component={CampPage} />
                 <Route exact path="/FAQ" component={FaqPage} />
                 <Route exact path="/News" component={NewsPage} />

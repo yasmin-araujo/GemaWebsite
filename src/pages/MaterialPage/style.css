@@ -28,6 +28,14 @@
     margin: 30px 0 20px;
 }
 
+#main-material .padding-top-2 {
+    padding-top: 2rem;
+}
+
+#main-material .grow {
+    flex-grow: 1
+}
+
 #main-material hr {
 	border: none;
 	width: 100%;
@@ -61,7 +69,26 @@
     text-align: left;
 }
 
-#main-material .list-group-flush .list-group-item+.list-group-item.active+{
-    border-color: rgba(0,0,0,.125);
-    background-color: var(--color-gray-1);
+#main-material .list-group {
+    border: 1px solid rgba(0,0,0,.125);
+    border-top-width: 0;
+}
+
+.cont {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#main-material .list-group-item {
+    margin-bottom: 0;
+    border: 0px solid rgba(0,0,0,.125);
+    border-top-width: 1px;
+}
+
+#material-links * {
+    background-color: rgba(255, 255, 255, .4);
 }
