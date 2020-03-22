@@ -4,12 +4,13 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Header from '../../components/Header/index';
 import Footer from '../../components/Footer/index';
-import {Card} from 'react-bootstrap'
+import {useHistory} from 'react-router-dom'
 
 import './style.css';
 
 // xs={12} sm={12} md={12} lg={12} xl={12}
 function LessonPage() {
+    const { goBack } = useHistory()
 	return (
 		<div id="main-material">
 			<Container fluid id="cont">
@@ -18,7 +19,7 @@ function LessonPage() {
 						<Header />
                         <Row>
                             <Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
-                                <a id='link' class='pointer'> {'<'} Voltar </a>
+                                <a id='link' class='pointer' onClick={() => goBack()}> {'<'} Voltar </a>
                             </Col>
                         </Row>
 					</Col>
