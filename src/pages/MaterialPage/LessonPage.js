@@ -52,7 +52,7 @@ function LessonPage() {
 					<Col>
 						<Header />
                         <Row>
-                            <Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
+                            <Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }} style={{paddingTop: "2rem"}}>
                                 <a id='link' class='pointer' onClick={() => goBack()}> {'<'} Voltar </a>
                             </Col>
                         </Row>
