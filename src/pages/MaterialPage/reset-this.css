@@ -137,7 +137,7 @@
     hyphens : none;
     left : auto;
     letter-spacing : normal;
-    line-height : normal;
+    line-height : 1.5rem;
     list-style : none;
     list-style-image : none;
     list-style-position : outside;
@@ -200,6 +200,7 @@
     word-spacing : normal;
     z-index : auto;
 }
+
 .reset-this html {
  display: block;
 }
@@ -1064,4 +1065,8 @@
 }
 .reset-this ol li{
     list-style-type: decimal;
+}
+
+.reset-this pre {
+    background: #F8F8F8;
 }
