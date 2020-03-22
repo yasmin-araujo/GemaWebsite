@@ -13,6 +13,20 @@ import CodeBlock from './CodeBlock'
 import './style.css';
 import './reset-this.css'
 
+// fixing some stuff that markdown isn't smart to recognize
+function pre_processing(text) {
+    // Replace reverse slashes (which markdown can't parse) to <br/>
+    text = text.replace(/\\[\r\n]/g, "<br/>")
+    
+    // When found array[idx], markdown thinks idx is a link, even if there's no URL in parenthesis after
+    // Uses regex to replace [] with escaping \[\] characters, but only if not inside code (```)
+    text = text.split('```').map((str, idx) => {
+        if(idx%2 == 0) return str.replace(/\[(.*?)\](?!\()/g, "\\[$1\\]") // not inside code
+        return str // inside code, do nothing
+    }).join('```')
+    return text
+}
+
 // xs={12} sm={12} md={12} lg={12} xl={12}
 function LessonPage() {
     const { goBack } = useHistory()
@@ -22,8 +36,8 @@ function LessonPage() {
         const path = require(`./lessons/${title}.md`)
         axios.get(path, {responseType: 'text'}).then(response => {
 
-            // Troca barras invertidas (que o markdown nao sabe parsear) pra <br/>
-            response.data = response.data.replace(/\\[\r\n]/g, "<br/>")
+            response.data = pre_processing(response.data)
+            console.log(response.data)
             setSourceText(response.data)
         })
     }, [])

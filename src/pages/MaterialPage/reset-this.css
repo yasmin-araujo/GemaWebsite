@@ -423,9 +423,14 @@
 .reset-this table {
   display: table;
   border-collapse: separate;
-  border-spacing: 2px;
-  border-color: gray;
+  border: 1px solid #dfe2e5;
+  background: white;
 }
+
+.reset-this table tr:nth-child(2n) {
+    background: #f6f8fa;
+}
+
 .reset-this thead {
   display: table-header-group;
   vertical-align: middle;
@@ -454,9 +459,13 @@
   display: table-row;
   vertical-align: inherit;
   border-color: inherit;
+  border: 1px solid #c6cbd1;
 }
 .reset-this td,
 .reset-this th {
+  font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  border: 1px solid #dfe2e5;
+  padding: .5rem;
   display: table-cell;
   vertical-align: inherit;
 }
