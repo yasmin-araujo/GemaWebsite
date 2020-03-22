@@ -16,8 +16,11 @@ import './reset-this.css'
 // fixing some stuff that markdown isn't smart to recognize
 function pre_processing(text) {
     // Replace reverse slashes (which markdown can't parse) to <br/>
-    text = text.replace(/\\[\r\n]/g, "<br/>")
-    
+    text = text.split('```').map((str, idx) => {
+        if(idx%2 == 0) return str.replace(/\\[\r\n]/g, "<br/>") // not inside code
+        return str // inside code, do nothing
+    }).join('```')
+
     // When found array[idx], markdown thinks idx is a link, even if there's no URL in parenthesis after
     // Uses regex to replace [] with escaping \[\] characters, but only if not inside code (```)
     text = text.split('```').map((str, idx) => {

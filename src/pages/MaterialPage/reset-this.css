@@ -954,7 +954,7 @@
 .reset-this plaintext,
 .reset-this listing {
   display: block;
-  font-family: monospace;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
   white-space: pre;
   margin: 1em 0;
 }
