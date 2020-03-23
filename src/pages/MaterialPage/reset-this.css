@@ -1079,4 +1079,5 @@
 .reset-this pre {
     background: #F8F8F8;
     padding: .5rem;
+    overflow-x: auto;
 }
