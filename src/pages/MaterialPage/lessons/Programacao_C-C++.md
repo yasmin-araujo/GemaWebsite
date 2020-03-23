@@ -364,5 +364,3 @@ int main() {
 }
 ```
 </details>
-
-"a[1]"
