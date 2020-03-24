@@ -20,9 +20,26 @@ function MaterialPage() {
 						<Header />
 					</Col>
 				</Row>
+				
 				<Row>
 					<Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
 						<h1 className="title">Materiais</h1>
+						<h3>A Programação Competitiva</h3>
+						<p className="quote">
+							"Dado um problema de programação já conhecido, resolva ele no menor tempo possível."
+						</p>
+						<p>
+							O estudo em programação competitiva se baseia em várias técnicas e algoritmos. Além de
+							conhecê-los, também é importante uma constante prática, para que o tempo que se gasta em
+							cada problema seja menor. Nos links abaixo você encontra alguns materiais preparados pelo GEMA para te auxiliar nesses estudos:
+						</p>
+						
+					</Col>
+				</Row>
+				<br />
+				<Row>
+					<Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
+						
 						<ListGroup id='material-links'>
 							<ListGroup.Item action href={`${url}/Aula/Introducao`}> Introdução </ListGroup.Item>
 							<ListGroup.Item action href={`${url}/Aula/Programacao_C-C++`}>Programação C/C++</ListGroup.Item>
@@ -30,21 +47,6 @@ function MaterialPage() {
 							<ListGroup.Item action href={`${url}/Aula/Arrays_Strings`}>Arrays e Strings</ListGroup.Item>
 							<ListGroup.Item action href={`${url}/Aula/Funcoes_Recursao`}>Funções e Recursão</ListGroup.Item>
 						</ListGroup>
-					</Col>
-				</Row>
-				<br />
-				<Row>
-					<Col sm={{ span: 10, offset: 1 }} xs={{ span: 10, offset: 1 }}>
-						<h3>Introdução à Programação Competitiva</h3>
-						<p className="quote">
-							"Dado um problema de programação já conhecido, resolva ele no menor tempo possível."
-						</p>
-						<p>
-							O estudo em programação competitiva se baseia em várias técnicas e algoritmos. Além de
-							conhecê-los, também é importante uma constante prática, para que o tempo que se gasta em
-							cada problema seja menor.
-						</p>
-						
 					</Col>
 				</Row>
 				<Row>

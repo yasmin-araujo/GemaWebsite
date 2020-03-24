@@ -147,6 +147,7 @@ function ContestPage() {
 				</Row>
 				<Row>
 					<Col id="form" sm={{ span: 8, offset: 2 }} xs={{ span: 8, offset: 2 }}>
+						<h1 className="title"> CF Tool </h1>
 						<h3> Encontre um contest para o seu time treinar </h3>
 						<Form>
 							<Form.Group controlId="handles">
