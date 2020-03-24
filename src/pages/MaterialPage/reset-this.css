@@ -1081,3 +1081,7 @@
     padding: .5rem;
     overflow-x: auto;
 }
+
+.reset-this pre * {
+  font-family: monospace;
+}
