@@ -42,7 +42,7 @@ function ContactPage() {
 										</a>
 									</Col>
 									<Col>
-										<a href="https://github.com/lusmoura/CompetitiveProgramming-Classes">
+										<a href="https://github.com/icmcgema">
 											<div className="about-icons">
 												<img src={GithubIcon} alt="" />{' '}
 											</div>
