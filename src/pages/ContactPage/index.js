@@ -34,7 +34,7 @@ function ContactPage() {
 							<Container fluid>
 								<Row id="icons-row" noGutters>
 									<Col>
-										<a href="https://www.facebook.com/gemaicmc/">
+										<a href="https://www.facebook.com/gemaicmc/" rel="noopener noreferrer" target="_blank">
 											<div className="about-icons">
 												<img src={FacebookIcon} alt="" />{' '}
 											</div>
@@ -42,7 +42,7 @@ function ContactPage() {
 										</a>
 									</Col>
 									<Col>
-										<a href="https://github.com/icmcgema">
+										<a href="https://github.com/icmcgema" rel="noopener noreferrer" target="_blank">
 											<div className="about-icons">
 												<img src={GithubIcon} alt="" />{' '}
 											</div>
@@ -50,7 +50,7 @@ function ContactPage() {
 										</a>
 									</Col>
 									<Col>
-										<a href="https://m.me/gemaicmc?fbclid=IwAR1sYp6wayedc_zLrOQ65nr4d0mpc4dgTHXOBEs6m-jUktijZJQipieSs_U">
+										<a href="https://m.me/gemaicmc?fbclid=IwAR1sYp6wayedc_zLrOQ65nr4d0mpc4dgTHXOBEs6m-jUktijZJQipieSs_U" rel="noopener noreferrer" target="_blank">
 											<div className="about-icons">
 												<img src={MessengerIcon} alt="" />{' '}
 											</div>
