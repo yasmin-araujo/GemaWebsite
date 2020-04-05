@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
-import ImgAulas from '../../images/aulas_gema.jpg';
-import ImgApresentacao from '../../images/chamada_apresentacao.jpg'
+import ImgAulas from '../../images/aulas_gema.png';
+import ImgApresentacao from '../../images/chamada_apresentacao.png'
 import Img3 from '../../images/gema_capa.png';
 import getNews from './../NewsColumns/news';
 

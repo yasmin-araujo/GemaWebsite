@@ -6,9 +6,9 @@ import getNews from './news';
 // Imagens das capas
 import Img1 from '../../images/time2.png';
 import Img2 from '../../images/tripleg.jpg';
-import ImgCamp from '../../images/camp_gema.jpg';
-import ImgAulas from '../../images/aulas_gema.jpg'
-import ImgApresentacao from '../../images/chamada_apresentacao.jpg'
+import ImgCamp from '../../images/camp_gema.png';
+import ImgAulas from '../../images/aulas_gema.png'
+import ImgApresentacao from '../../images/chamada_apresentacao.png'
 
 import './style.css';
 
@@ -70,7 +70,7 @@ export default function NewsColumns() {
 					</footer> */}
 				</blockquote>
 			</Card>
-			<Card className="p-3">
+			<Card>
 				<Card.Img variant="top" src={Img2} />
 				<Card.Body>
 					<Card.Title>{n3.title}</Card.Title>
@@ -81,7 +81,6 @@ export default function NewsColumns() {
 					<small className="text-muted news-data">{n3.date}</small>
 				</Card.Footer>
 			</Card>
-            {/* Diferentes estilos de card como exemplo */}
 			
 			<Card>
 				<Card.Img variant="top" src={Img1} />

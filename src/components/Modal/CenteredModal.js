@@ -13,9 +13,9 @@ import Button from 'react-bootstrap/Button';
 import Img1 from '../../images/time1.png';
 import Img2 from '../../images/time2.png';
 import Img3 from '../../images/tripleg.jpg';
-import ImgAulas from '../../images/aulas_gema.jpg'
-import ImgCamp from '../../images/camp_gema.jpg';
-import ImgApresentacao from '../../images/chamada_apresentacao.jpg'
+import ImgAulas from '../../images/aulas_gema.png'
+import ImgCamp from '../../images/camp_gema.png';
+import ImgApresentacao from '../../images/chamada_apresentacao.png'
 
 // Indexação das imagens
 let img1 = { id: 1, image: Img1 };
