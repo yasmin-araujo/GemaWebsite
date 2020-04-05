@@ -1,20 +1,20 @@
 #main-contact {
 	min-height: 100vh;
 	background: rgb(231, 215, 238);
-	background: linear-gradient(180deg, rgba(231, 215, 238, 1) 0%, rgba(255, 255, 255, 1) 55%);
+	background: linear-gradient(180deg, rgba(231, 215, 238, 1) 0%, rgba(255, 255, 255, 1) 50%);
 }
 
 @media (max-width: 992px) {
 	#main-contact {
 		background: rgb(231, 215, 238);
-		background: linear-gradient(180deg, rgba(231, 215, 238, 1) 0%, rgba(255, 255, 255, 1) 45%);
+		background: linear-gradient(180deg, rgba(231, 215, 238, 1) 0%, rgba(255, 255, 255, 1) 40%);
 	}
 }
 
 @media (max-width: 692px) {
 	#main-contact {
 		background: rgb(231, 215, 238);
-		background: linear-gradient(180deg, rgba(231, 215, 238, 1) 0%, rgba(255, 255, 255, 1) 40%);
+		background: linear-gradient(180deg, rgba(231, 215, 238, 1) 0%, rgba(255, 255, 255, 1) 35%);
 	}
 }
 
@@ -88,7 +88,7 @@
 
 #main-contact .about-icons {
 	background-color: white;
-	box-shadow: 0 0 15px #b19cd8a4;
+	box-shadow: 0 0 15px #b19cd87a;
 	border-radius: 100%;
 	height: 100px;
 	width: 100px;

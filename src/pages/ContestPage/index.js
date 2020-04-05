@@ -206,7 +206,7 @@ function ContestPage() {
 				<br/>
 				<br/>
 				<Row>
-					<Col sm={{ span: 8, offset: 2 }} xs={{ span: 8, offset: 2 }}>
+					<Col id="search-results" sm={{ span: 8, offset: 2 }} xs={{ span: 8, offset: 2 }}>
 						<div>
 							<div id="status">
 								{status+(status? "..." : '')}

@@ -24,7 +24,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top: 80px;
+	margin-top: 90px;
 }
 
 #main-contest h3 {
@@ -72,4 +72,22 @@
 #main-contest #form #search.btn{
     background-color: var(--color-2-extra-light);
     border-color: transparent;
+}
+
+#main-contest #search-results a {
+    color: var(--color-2-dark);
+}
+
+#main-contest #search-results a:hover{
+	color: var(--color-2-medium);
+	text-decoration: none;
+}
+
+#main-contest .list-group-item {
+    text-align: left;
+    background-color: #fdfbfe;
+}
+
+#main-contest .list-group-item:hover {
+	background-color: #f8f9fa;
 }
