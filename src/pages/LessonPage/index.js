@@ -39,9 +39,10 @@ function pre_processing(text) {
 
 // xs={12} sm={12} md={12} lg={12} xl={12} ⯇ 🡄
 function LessonPage() {
-	const { goBack } = useHistory();
+	const history = useHistory();
 	const { title } = useParams();
-	const [ sourceText, setSourceText ] = useState('## Carregando texto...');
+	// const [ sourceText, setSourceText ] = useState('## Carregando texto...');
+	const [ sourceText, setSourceText ] = useState('');
 	useEffect(() => {
 		const path = require(`./lessons/${title}.md`);
 		axios.get(path, { responseType: 'text' }).then((response) => {
@@ -63,7 +64,7 @@ function LessonPage() {
 								xs={{ span: 10, offset: 1 }}
 								style={{ paddingTop: '2rem' }}
 							>
-								<a id="link" class="pointer" onClick={() => goBack()}>
+								<a id="link" class="pointer" onClick={() => history.push('/Material')}>
 									<FaAngleLeft /> &nbsp; Voltar{' '}
 								</a>
 							</Col>

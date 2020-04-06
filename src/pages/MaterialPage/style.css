@@ -57,12 +57,12 @@
 }
 
 #main-material #links-col a,
-#main-material .material-links a {
+#main-material .material-links button {
     color: var(--color-2-dark);
 }
 
 #main-material #links-col a:hover,
-#main-material .material-links a:hover {
+#main-material .material-links button:hover {
 	color: var(--color-2-medium);
 	text-decoration: none;
 }
