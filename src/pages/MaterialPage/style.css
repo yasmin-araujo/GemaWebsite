@@ -96,21 +96,3 @@
 /* #material-links * {
 	background-color: rgba(255, 255, 255, .4);
 } */
-
-.cont {
-	margin-right: 10%;
-	margin-left: 10%;
-}
-
-.pointer {
-	cursor: pointer;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	overflow: hidden;
-}

@@ -1,0 +1,104 @@
+#main-lesson {
+	min-height: 100vh;
+	background: rgb(231, 215, 238);
+	background: linear-gradient(180deg, rgba(231, 215, 238, 1) 0%, rgba(255, 255, 255, 1) 550px);
+}
+
+#main-lesson > #cont {
+	height: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 90px;
+}
+
+#main-lesson h1 {
+	color: var(--color-1-dark);
+	text-align: center;
+	margin: 40px 0 40px;
+	font-size: 2.5rem;
+	padding-bottom: 5px;
+}
+
+#main-lesson hr + h1 {
+	margin: 100px 0 80px;
+}
+
+#main-lesson h2 {
+	font-size: 1.75rem;
+	text-transform: uppercase;
+	color: var(--color-1-medium);
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 80px 0 40px 0;
+}
+
+#main-lesson h3 {
+	font-size: 1.55rem;
+	text-transform: none;
+	color: var(--color-1-medium);
+	text-align: left;
+	letter-spacing: 0.5px;
+	margin: 60px 0 30px;
+	padding-bottom: 5px;
+}
+
+#main-lesson h4 {
+	font-size: 1.3rem;
+	color: var(--color-1-medium);
+	margin: 50px 0 30px;
+	padding-bottom: 3px;
+}
+
+#main-lesson h1,
+#main-lesson h2,
+#main-lesson h3,
+#main-lesson h4,
+#main-lesson h5,
+#main-lesson h6 {
+	overflow: hidden;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+#main-lesson hr {
+	border: none;
+	width: 100%;
+	color: transparent;
+	border-bottom: 3px double #e2e2e2;
+	height: 9px;
+	margin: 60px 0 50px;
+}
+
+#main-lesson .pointer {
+	cursor: pointer;
+	color: var(--color-1-dark);
+	display: flex;
+	align-items: center;
+}
+
+#main-lesson .pointer:hover {
+	color: var(--color-1-extra-light);
+}
+
+#main-lesson blockquote {
+	background-color: #f7f7f7;
+	color: #666;
+	text-align: center;
+	padding: 15px 10px;
+	margin: 30px 0;
+	border-radius: 10px;
+	/* font-size: 12px; */
+	font-style: italic;
+}
+
+#main-lesson a {
+	color: var(--color-2-dark);
+	text-decoration: none;
+}
+
+#main-lesson a:hover {
+	color: var(--color-2-medium);
+	text-decoration: none;
+}
