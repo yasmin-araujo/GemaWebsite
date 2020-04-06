@@ -136,7 +136,7 @@ int main() {
 
 É possível burlar isso (pelo menos para as funções), com variáveis globais, como veremos no próximo tópico.
 
-# Variáveis Globais
+## Variáveis Globais
 Agora que já sabemos o que é função, podemos falar um pouco sobre as variáveis globais. Elas são variáveis que são declaradas fora do escopo de todas as funções. Por exemplo:
 ```c++
 int a, b; // variáveis globais, fora da função main
@@ -201,11 +201,11 @@ int main(){
 Esse tipo de prática não é muito recomendada. É bastante perigoso declarar variáveis fora das funções, pois pode haver conflito de nomes, acessos indevidos e indesejados, dentre outros problemas. 
 Aqui em programação competitiva não fazemos códigos tão grandes que serão utilizados por muitas pessoas, então podem usar e abusar das variáveis globais. MAS não usem elas nos trabalhos da faculdade ou no mercado de trabalho (se usarem sem querer, a culpa não é nossa... a gente avisou).
 
-# Algumas funções úteis
+## Algumas funções úteis
 
 Como já falamos antes, no início do código nós incluímos a *biblioteca* bits/stdc++. Além de diversas outras coisas, ela contém algumas funções úteis já implementadas e prontas para serem usadas. O próprio C++ também já possui algumas funções que não existem em C. As principais são:
 
-#### Sqrt
+### Sqrt
 Essa função simplesmente retorna um double representando a raíz quadrada do número passado como parâmetro.
 ```c++
 int main(){
@@ -215,7 +215,7 @@ int main(){
 }
 ```
 
-#### Max
+### Max
 Função que retorna o máximo entre os valores passados como parâmetros (essa não existe em C). Esse valores não necessariamente precisam ser números.
 ```c++
 int main(){
@@ -237,7 +237,7 @@ int main(){
 }
 ```
 
-#### Min
+### Min
 Essa função é similar à max, mas dessa vez retorna o mínimo entre valores.
 ```c++
 int main(){
@@ -259,7 +259,7 @@ int main(){
 }
 ```
 
-#### Abs
+### Abs
 A função Abs retorna o valor absoluto do parâmetro. Isto é, se o número for positivo, ele mesmo será retornado. Se for negativo, o valor positivo simétrico a ele será retornado.
 ```c++
 int main(){
@@ -269,7 +269,7 @@ int main(){
 	cout << positivoA << " " << positivoB << endl;
 }
 ```
-#### Swap
+### Swap
 O swap troca dois valores passados como parâmetros.
 ```c++
 int main(){
@@ -279,7 +279,7 @@ int main(){
 }
 ```
 
-#### Sort
+### Sort
 Função de ordenação. Ela ordena os elementos num range em ordem crescente. Seus parâmetros são a posição inicial do range e a posição final +1, ou seja, um intervalo fechado no início e aberto no final (inicio, fim].
 ```c++
 int main(){
@@ -314,6 +314,7 @@ int main(){
 ```
 O operador será um booleano que irá retornar um bool a partir da comparação entre os números. Nesse caso, ele vai retornar true se a for maior b e, com isso, a será inserido numa posição a frente de b no vetor.
 
+---
 
 # Recursão
 
@@ -401,7 +402,7 @@ Após todas as chamadas terem sido feitas, a recursão vai "voltar" fazendo de f
 	-fat(4) retorna (4 * fat(3)) -> retorna 4 * 6 -> retorna 24
 ```
 
-### Overview da recursão
+## Overview da recursão
 ```c++
 int recursion(int x) {              //Função recursiva com x como parâmetro
 	if(baseCase) return value;  //Checagem do caso base, se x estiver satisfazendo esse
@@ -411,7 +412,7 @@ int recursion(int x) {              //Função recursiva com x como parâmetro
 }
 ```
 
-### Continuando com exemplos
+## Continuando com exemplos
 
 A função de Fibonacci é uma função na qual o valor atual (n) é a soma dos dois valores anteriores (n-1 e n-2), ou seja, f(n) = f(n-1) + f(n-2). Como vimos antes, se não definirmos um caso base a função será infinita, então podemos dizer que f(1) = f(2) = 1. Isso quer dizer que nossa sequência vai ser 1, 1, 2, 3, 5, 8, 13, 21....
 

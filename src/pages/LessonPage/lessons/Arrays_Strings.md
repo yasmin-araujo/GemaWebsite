@@ -1,6 +1,6 @@
 # Vetores, Matrizes e Strings
 
-# Vetores
+## Vetores
 
 Os vetores (ou arrays) servem para armazenar várias variáveis (de mesmo tipo) de uma só vez. Podemos representar arrays da seguinte forma:
 
@@ -50,7 +50,7 @@ O array acima pode ser representado da assim:
 | Value: |    1   |    2   |    3   |    4   |    5   |
 
 
-# Matrizes
+## Matrizes
 Uma matriz é um array 2D, isso é, um array que pode ser organizado e acessado a partir de linha e colunas. O código abaixo mostra a utilização de uma matriz:
 
 ```c++
@@ -110,7 +110,7 @@ A matriz acima pode ser representada assim:
 | mat[1][] |     5    |     6    |     7    |     8    |
 | mat[2][] |     9    |    10    |    11    |    12    |
 
-# Variáveis globais, locais e *lixo*
+## Variáveis globais, locais e *lixo*
 
 Em todos os casos até agora, declaramos nossas variáveis dentro da função *main*. Porém, podemos também declarar variáveis fora dela. Usar variáveis globais fará mais sentido mais a frente, quando falaremos mais sobre *funções*. Por enquanto, vamos falar de apenas uma vantagem de se utilizar variáveis globais - mas, para isso, primeiro temos que entender o que é *lixo* em C/C++.
 
@@ -149,7 +149,7 @@ Porém, quando criamos variáveis globais, além delas poderem ser utilizadas em
 
 É bom ressaltar, porém, que apesar do uso de variáveis globais ser bastante útil para programação competitiva, é uma prática abominada na "programação normal". Como geralmente temos códigos grandes, com muitas variáveis e muitas funções (sério, juro que uma hora vamos falar delas), utilizar variáveis globais pode causar, por exemplo, conflitos de nomes. Então nos contests e questões pode usar e abusar dessas variáveis, mas vai com calma nos trabalhos de ICC.
 
-# Strings
+## Strings
 Strings são arrays de caracteres, isto é, palavras e frases. Em C não temos o tipo string, então seria preciso utilizar literalmente um vetor de caracteres ou adicionar uma biblioteca (string.h), mas em C++ já temos string como um tipo de variável.
 No código abaixo podemos ver como se faz leitura e escrita de palavras:
 

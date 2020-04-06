@@ -8,7 +8,7 @@ As partes de código precedidas de *//* são comentários. Eles são ignorados n
 
 Recomendamos que, durante a leitura, você tente fazer os códigos ou pelo menos executar os exemplos mostrados.
 
-# Como rodar seus códigos
+## Como rodar seus códigos
 
 Antes de mais nada, vamos aprender como podemos executar nossos códigos.
 
@@ -37,7 +37,7 @@ E, por fim, para executá-lo, podemos utilizar:
     ./nome_do_executavel
 ```
 
-# Estrutura básica em C
+## Estrutura básica em C
 
 ```c
 int main() { //função principal do código, a partir da qual a execuço é iniciada
@@ -163,7 +163,7 @@ int main() {
 }
 ```
 
-# Comandos Condicionais
+## Comandos Condicionais
 
 Outros comandos muito úteis são os condicionais. Isto é, fazemos linhas de código que apenas executam caso alguma condição seja satisfeita. Desse jeito:
 
@@ -240,7 +240,7 @@ int main() {
 }
 ```
 
-## Cuidado!
+### Cuidado!
 
 É comum cometer **erros lógicos** ao se lidar com condicionais. Dentre eles, tentar comparar uma variável com diversos valores da seguinte forma:
 
@@ -261,7 +261,7 @@ if(x = 1){
 }
 ```
 
-# C++
+## C++
 Bom, essa é foi introdução à programação em C. Agora, vamos ver algumas coisas que podemos fazer em C++, e que ajudarão na maratona de programação.
 
 Como foi dito no início, podemos usar em C++ os mesmos comandos que utilizamos em C. Mas também podemos fazer as coisas de um jeito um pouco diferente. Podemos, por exemplo, utilizar os comandos 'cin' e 'cout' para substituir o scanf e o printf, uma vez que, com eles, não precisamos das máscaras para os diferentes tipos de variáveis.
@@ -287,7 +287,7 @@ int main() {
 }
 ```
 
-# Overflow e o tipo *long long*
+## Overflow e o tipo *long long*
 
 Bom, como foi dito anteriormente, cada tipo de variável possui um limite para os valores que pode armazenar. Isso se dá devido a quantidade de bits e bytes que uma variável reserva na memória. Portanto, se eu digitar um valor muito grande (ou muito pequeno) em algum dos tipos citados anteriormente, acontece o chamado *overflow* - a sua variável não possui bits necessários para representar o valor inserido, e fica com um valor totalmente diferente do esperado.
 
@@ -309,7 +309,7 @@ int main() {
 }
 ```
 
-# O tipo boolean
+## O tipo boolean
 
 Existe também outro tipo de variável interessante que é bastante utilizado. Esse é o tipo *bool*, que tem apenas um byte, ou seja simplesmente armazena dois valores - *true* ou *false* (1 ou 0). Em C, é preciso adicionar uma biblioteca para poder utilizá-los, mas em C++ ele é um tipo nativo.
 Ele é útil, dentre outras coisas, para armazenar alguma informação que depois será usada em um comando condicional *(if e else)*. Abaixo, um exemplo (um tanto quanto inútil) de funcionamento:
@@ -333,7 +333,7 @@ int main() {
 }
 ```
 
-# Probleminha
+## Probleminha
 
 Aqui vai um problema que aborda alguns dos principais conceitos vistos nessa aula:
 
