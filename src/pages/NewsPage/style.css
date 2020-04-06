@@ -27,26 +27,26 @@
 	margin-top: 80px;
 }
 
-.news-div {
+#main-news .news-div {
     padding: 15px;
     background-color: white;
     border-radius: 15px;
 }
 
-.news-title{
+#main-news .news-title{
     font-size: 130%;
     margin: 20px 0;
 }
 
-.news-body{
+#main-news .news-body{
     text-align: justify;
 }
 
-.news-body > a {
+#main-news .news-body > a {
     color: var(--color-2-dark);
 }
 
-.news-body > a:hover {
+#main-news .news-body > a:hover {
     text-decoration: none;
     color: var(--color-2-medium);
 }

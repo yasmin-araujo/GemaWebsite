@@ -6,15 +6,15 @@ header {
 	width: 100vw;
 }
 
-.logo {
-	margin: 4px 0 0 0;
-	width: 20px;
-	height: 25px;
-}
-
 #mainNav {
 	background-color: var(--color-gray-1);
 	box-shadow: 0 2px 10px 2px var(--color-shadow-1);
+}
+
+#mainNav .logo {
+	margin: 4px 0 0 0;
+	width: 20px;
+	height: 25px;
 }
 
 #mainNav .navbar-toggler {
@@ -59,7 +59,7 @@ header {
 }
 
 @media (min-width: 992px) {
-	.logo {
+	#mainNav .logo {
 		margin: 4px 0 0 0;
 		width: 30px;
 		height: 35px;

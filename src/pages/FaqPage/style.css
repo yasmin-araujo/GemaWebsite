@@ -13,40 +13,34 @@
 }
 
 #main-faq .header-space {
-	padding-top: 80px;
+	padding-top: 0px;
 }
 
-.title {
-	color: var(--color-1-medium);
-	text-align: center;
-	margin: 20px;
-	overflow-y: hidden;
+@media (max-width: 355px) {
+	#main-faq .header-space {
+		padding-top: 80px;
+	}
 }
 
-.accordion>.card>.card-header {
-    display: flex;
-    justify-content: space-between;
+#main-faq .accordion > .card > .card-header {
+	display: flex;
+	justify-content: space-between;
 }
 
-.card-header:hover {
+#main-faq .card-header:hover {
 	cursor: pointer;
 }
 
-#link {
+#main-faq #link {
 	color: var(--color-2-dark);
 }
 
-#link:hover {
+#main-faq #link:hover {
 	text-decoration: none;
 	color: var(--color-2-medium);
 }
 
-.arrow {
+#main-faq .arrow {
 	min-width: fit-content;
 	color: var(--color-1-extra-light);
-}
-
-.footer-row {
-	margin-top: 50px;
-	position: relative;
 }

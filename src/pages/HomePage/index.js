@@ -13,7 +13,7 @@ import './style.css';
 
 function HomePage() {
 	return (
-		<div className="main">
+		<div id="main-home">
 			<Container fluid>
 				<Row>
 					<Col>

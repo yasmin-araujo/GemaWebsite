@@ -183,20 +183,20 @@
     margin-top: -80px;
 }
 
-.list-group-item-action {
+#main-about .list-group-item-action {
     text-align: center;
 }
 
-.list-group-horizontal .list-group-item+.list-group-item.active{
+#main-about .list-group-horizontal .list-group-item.active{
     border-color: rgba(0,0,0,.125);
     background-color: transparent;
 }
 
-#historico .list-group-item-action {
+#main-about #historico .list-group-item-action {
     text-align: left;
 }
 
-.list-group-flush .list-group-item+.list-group-item.active{
+#main-about .list-group-flush .list-group-item.active{
     border-color: rgba(0,0,0,.125);
     background-color: transparent;
 }
