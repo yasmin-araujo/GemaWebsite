@@ -9,28 +9,31 @@ import { useHistory } from 'react-router-dom';
 
 import './style.css';
 
+
+// Para adicionar novos links de aulas insira no final do array classes conforme o formato a seguir
+// classes.push({ title: 'Nome da aula', url: 'Material/Aula/url da aula' });
+const classes = [
+	{ title: 'Introdução', url: '/Material/Aula/Introducao?a=1' },
+	{ title: 'Programação C/C++', url: '/Material/Aula/Programacao_C-C++' },
+	{ title: 'Repetição', url: '/Material/Aula/Repeticao' },
+	{ title: 'Arrays e Strings', url: '/Material/Aula/Arrays_Strings' },
+	{ title: 'Funções e Recursão', url: '/Material/Aula/Funcoes_Recursao' },
+]
+
+// Links de materiais relevantes
+const links = [
+	{ title: 'GitHub do GEMA', url: 'https://github.com/icmcgema' },
+	{ title: 'GitHub do Fakhoury', url: 'https://github.com/andrefakhoury' },
+	{ title: 'GitHub do Forbes', url: 'https://github.com/VictorXjoeY' },
+	{ title: 'GitHub do LoppA', url: 'https://github.com/LoppA' },
+	{ title: 'GitHub da lmoura', url: 'https://github.com/lusmoura' },
+	{ title: 'GitHub do Preischadt', url: 'https://github.com/thiagop-usp' },
+	{ title: 'GitHub do David', url: 'https://github.com/davidcairuz' },
+]
+
 // xs={12} sm={12} md={12} lg={12} xl={12}
 function MaterialPage() {
 	const history = useHistory();
-	let classes = [];
-	let links = [];
-
-	// Para adicionar novos links de aulas insira no final do array classes conforme o formato a seguir
-	classes.push({ title: 'Introdução', url: '/Material/Aula/Introducao' });
-	classes.push({ title: 'Programação C/C++', url: '/Material/Aula/Programacao_C-C++' });
-	classes.push({ title: 'Repetição', url: '/Material/Aula/Repeticao' });
-	classes.push({ title: 'Arrays e Strings', url: '/Material/Aula/Arrays_Strings' });
-	classes.push({ title: 'Funções e Recursão', url: '/Material/Aula/Funcoes_Recursao' });
-	// classes.push({ title: 'Nome da aula', url: 'Material/Aula/url da aula' });
-    
-    // Links de materiais relevantes
-    links.push({ title: 'GitHub do GEMA', url: 'https://github.com/icmcgema' });
-    links.push({ title: 'GitHub do Fakhoury', url: 'https://github.com/andrefakhoury' });
-    links.push({ title: 'GitHub do Forbes', url: 'https://github.com/VictorXjoeY' });
-    links.push({ title: 'GitHub do LoppA', url: 'https://github.com/LoppA' });
-    links.push({ title: 'GitHub da lmoura', url: 'https://github.com/lusmoura' });
-    links.push({ title: 'GitHub do Preischadt', url: 'https://github.com/thiagop-usp' });
-    links.push({ title: 'GitHub do David', url: 'https://github.com/davidcairuz' });
 
 	return (
 		<div id="main-material">
