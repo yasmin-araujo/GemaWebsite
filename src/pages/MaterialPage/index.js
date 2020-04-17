@@ -11,13 +11,17 @@ import './style.css';
 
 
 // Para adicionar novos links de aulas insira no final do array classes conforme o formato a seguir
-// classes.push({ title: 'Nome da aula', url: 'Material/Aula/url da aula' });
+// classes.push({ title: 'Nome da aula', url: 'Material/Aula/url da aula', type: 'tipo (markdown ou html)' });
 const classes = [
-	{ title: 'Introdução', url: '/Material/Aula/Introducao?a=1' },
+	{ title: 'Introdução', url: '/Material/Aula/Introducao?' },
 	{ title: 'Programação C/C++', url: '/Material/Aula/Programacao_C-C++' },
 	{ title: 'Repetição', url: '/Material/Aula/Repeticao' },
 	{ title: 'Arrays e Strings', url: '/Material/Aula/Arrays_Strings' },
 	{ title: 'Funções e Recursão', url: '/Material/Aula/Funcoes_Recursao' },
+	{ title: 'Complexidade', url: '/Material/Aula/Complexidade' },
+	{ title: 'Busca Binária', url: '/Material/Aula/Busca_Binaria' },
+	{ title: 'STL (Standard Template Library)', url: '/Material/Aula/STL' },
+	{ title: 'Programação Dinâmica', url: '/Material/Aula/Programacao_Dinamica' },
 ]
 
 // Links de materiais relevantes

@@ -102,3 +102,19 @@
 	color: var(--color-2-medium);
 	text-decoration: none;
 }
+
+#main-lesson code {
+	font-size: 1em;
+}
+
+.MathJax * {
+	overflow-x: visible;
+}
+
+/* These two are to hide the little : we don't want to show */
+div.input::before {
+	display: none;
+}
+div.output::before {
+	display: none;
+}
