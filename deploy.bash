@@ -15,8 +15,8 @@ then
     echo "Updating the site and moving old contents to directory at $name..."
     sudo cp -r /var/www/html/* $name/
     echo "Removing content from /var/www/html folder..."
-    sudo rm -rf /var/www/html
-    sudo cp -r build/* /var/www/html
+    sudo rm -rf /var/www/html/
+    sudo cp -r build/* /var/www/html/
     echo "Creating .htaccess file for apache to use"
     sudo touch /var/www/html/.htaccess
 
