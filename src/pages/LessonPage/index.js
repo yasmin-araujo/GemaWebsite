@@ -49,6 +49,9 @@ const extension = {
 	"Busca_Binaria": "md",
 	"STL": "md",
 	"Programacao_Dinamica": "ipynb",
+	"Teoria_dos_Numeros": "ipynb",
+	"Grafos_DFS_BFS": "md",
+	"Union_Find": "md",
 }
 
 // xs={12} sm={12} md={12} lg={12} xl={12} ⯇ 🡄
@@ -67,10 +70,11 @@ function LessonPage() {
 		const path = require(`./lessons/${title}.${extension[title]}`);
 		axios.get(path, { responseType: 'text' }).then((response) => {
 			if(extension[title] === 'md') response.data = pre_processing(response.data);
+			console.log(response.data)
 			setSourceText(response.data);
 			setType(extension[title])
 		});
-	}, []);
+	}, [title]);
 
 
 	const markdown = <Markdown 
