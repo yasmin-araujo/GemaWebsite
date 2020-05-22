@@ -185,12 +185,65 @@ let n6body = {
 	date: '22/05/2020'
 }
 
+let n7body = {
+	id: 7,
+	title: 'Como manter os estudos durante a quarentena?',
+	resume: <> Nesses tempos difíceis de pandemia, é difícil continuar a estudar e manter a motivação. 
+	Reunímos aqui algumas dicas e links que podem te ajudar. </>,
+	body: (
+		<>
+			<p>
+				A quarentena deixa todo mundo desanimado, e para algumas pessoas é difícil continuar a estudar em casa. Felizmente,
+				esse não é o caso do pessoal da computação, e pra isso vamos te ajudar com alguns links legais relacionados
+				à programação competitiva pra você não perder a motivação. #vaificartudobem
+			</p>
+
+			<p>
+				No youtube, um canal muito legal é o <a href='https://www.youtube.com/channel/UCBLr7ISa_YDy5qeATupf26w'> Algorithms Live! </a>, um autodenominado talk show que 
+				aborda algoritmos e problemas de CP com convidados em um estilo bem educativo. Eles fazem vídeos tanto para iniciantes como avançados.
+			</p>
+			
+			<p>
+				Outro canal que merece sua visita é o do <a href='https://www.youtube.com/channel/UCBr_Fu6q9iHYQCh13jmpbrg'> Errichto </a>, um competidor veterano
+				que já ganhou várias competições e doa seu tempo para ensinar o que aprendeu aos iniciantes. Seu conteúdo é focado em streams onde ele resolve problemas 
+				explicando o que está pensando durante o processo, mas também existem aulas sobre temas variados.
+			</p>
+
+			<p>
+				Um site muito bom para estudar algoritmos é o <a href='https://cp-algorithms.com/'>CP-Algorithms</a>, 
+				uma tradução comunitária do site russo E-Maxx para o inglês, que reúne explicações detalhadas sobre as 
+				técnicas mais relevantes usadas na programação competitiva.
+			</p>
+
+			<p>
+				Se você tem um notebook disponível em sua casa, é claro que você pode também participar dos contests
+				oferecidos pelos judges: <a href='https://codeforces.com/'> Codeforces </a>, <a href='https://www.codechef.com/'> Codechef </a>, 
+				<a href='https://atcoder.jp/'> Atcoder </a>, <a href='https://www.hackerrank.com/'> Hacker Rank</a>, 
+				<a href='https://leetcode.com/contest/'> Leetcode </a> e <a href='https://neps.academy'> Neps Academy (brasileiro)</a>.
+				Os quatro últimos são os mais amigáveis para os iniciantes. Participar desses contests é muito importante, porque o melhor jeito de estudar
+				CP é resolvendo problemas.
+			</p>
+
+			<p>
+				Espero que você se interesse por alguns desses links. É claro que você deve continuar vendo as aulas do GEMA tirando dúvidas com a gente.
+				
+			</p>
+			<p> Se cuida! <br/> #fiqueemcasa </p>
+		</>
+	),
+	image1: 0,
+	image2: 0,
+	imageCover: 8,
+	date: '22/05/2020'
+}
+
 news.push(n1body);
 news.push(n2body);
 news.push(n3body);
 news.push(n4body);
 news.push(n5body);
 news.push(n6body);
+news.push(n7body);
 
 // Retorna notícia de respectivo id recebido no props
 export default function getNews(props) {
