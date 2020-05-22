@@ -22,6 +22,9 @@ const classes = [
 	{ title: 'Busca Binária', url: '/Material/Aula/Busca_Binaria' },
 	{ title: 'STL (Standard Template Library)', url: '/Material/Aula/STL' },
 	{ title: 'Programação Dinâmica', url: '/Material/Aula/Programacao_Dinamica' },
+	{ title: 'Grafos (DFS e BFS)', url: '/Material/Aula/Grafos_DFS_BFS' },
+	{ title: 'Teoria dos Números', url: '/Material/Aula/Teoria_dos_Numeros' },
+	{ title: 'Union Find', url: '/Material/Aula/Union_Find' },
 ]
 
 // Links de materiais relevantes

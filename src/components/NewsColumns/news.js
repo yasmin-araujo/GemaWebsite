@@ -9,8 +9,61 @@
 import React from 'react';
 let news = [];
 
-const n1body = {
+let n2body = {
 	id: 1,
+    title: 'O GEMA classificou para a nacional!',
+    resume:<> Confira os times que conseguiram se classificar para a final brasileira da competição! </>,
+	body: (
+		<>
+			A fase regional da maratona de programação aconteceu no dia 14 de setembro, na qual participaram 726 times
+			distribuídos em 47 sedes espalhadas pelo Brasil. Nesta fase, 7 times do ICMC foram até a sede de Piracicaba
+			competir, e conseguiram ótimos resultados!<br />
+			<br />
+			Os times "Triple G" e "Um minuto para o fim do coffe" conseguiram se classificar para a final brasileira da
+			competição, obtendo 11° e 12° lugares no ranking nacional. O detalhe é que para irem para a próxima fase, os
+			dois times deveriam ficar entre os top 15 do país, e conseguirem uma vaga na fase nacional, que acontecerá
+			em Campina Grande, em novembro.<br />
+			<br />Você pode ler mais sobre a competição e conferir os problemas da prova na{' '}
+			<a href="http://maratona.ime.usp.br/primfase19/">página da maratona</a>.<br />
+			<br /> O GEMA, pelo quinto ano seguido, consegue classificar pelo menos dois times para a final brasileira
+			da Maratona de Programação. Parabéns aos competidores!
+		</>
+    ),
+    image1: 1,
+	image2: 2,
+	imageCover: 1,
+	date: '15/02/2020'
+};
+
+let n3body = {
+	id: 2,
+    title: 'Mais um ano de medalha para o GEMA!',
+    resume:  <> O time "Triple G" foi muito bem na final nacional, ganhando medalhas de prata e uma vaga na fase mundial do ICPC! </>,
+	body: (
+        <>
+		
+			A final nacional deste ano aconteceu em Campina Grande, nos dias 08 e 09 de novembro, com a participação de
+			70 times do país. Nesta fase, os times "Triple G" e "Um minuto para o fim do coffe" participaram, e
+			obtiveram ótimos resultados! Dos 13 problemas da prova, o time "Triple G" (à esquerda), integrado por
+			Guilherme "Tubone", Gabriel "Artista" Camargo e Gustavo "gsoares" Soares, conseguiu resolver 7, se
+			posicionando em sexto lugar e ganhando medalhas de prata. Com isso, o time classificou-se para a final mundial, 
+			que ocorrerá em junho de 2020 em Moscow, na Rússia! <br />
+			<br /> O time "Um minuto para o fim do coffee" (à direita), composto por André "Fakhoury", Frederico "Fred"
+			Bulhões e Raphael "Medeiros", solucionou 6 problemas, conseguindo o 12° no placar nacional! Você pode
+			acessar o ranking completo &nbsp; 
+			<a href="http://scorelatam.naquadah.com.br/">aqui</a>. <br />
+			<br /> O GEMA consegue mais uma vez um ótimo resultado na Maratona de Programação, parabéns aos
+			competidores!
+        </>
+    ),
+    image1: 3,
+	image2: 0, // imagem com índice 0 quando ela não existe
+	imageCover: 3,
+	date: '15/02/2020'
+};
+
+const n1body = {
+	id: 3,
     title: 'O GEMA vai dar aulas de programação!',
     resume:  <> Fique atento às datas, as aulas de programação em C++ do GEMA começarão em breve! </>,
 	body: (
@@ -35,58 +88,8 @@ const n1body = {
     ),
     image1: 4,
 	image2: 0, // imagem com índice 0 quando ela não existe
+	imageCover: 4,
 	date: '01/03/2020'
-};
-
-let n2body = {
-	id: 2,
-    title: 'O GEMA classificou para a nacional!',
-    resume:<> Confira os times que conseguiram se classificar para a final brasileira da competição! </>,
-	body: (
-		<>
-			A fase regional da maratona de programação aconteceu no dia 14 de setembro, na qual participaram 726 times
-			distribuídos em 47 sedes espalhadas pelo Brasil. Nesta fase, 7 times do ICMC foram até a sede de Piracicaba
-			competir, e conseguiram ótimos resultados!<br />
-			<br />
-			Os times "Triple G" e "Um minuto para o fim do coffe" conseguiram se classificar para a final brasileira da
-			competição, obtendo 11° e 12° lugares no ranking nacional. O detalhe é que para irem para a próxima fase, os
-			dois times deveriam ficar entre os top 15 do país, e conseguirem uma vaga na fase nacional, que acontecerá
-			em Campina Grande, em novembro.<br />
-			<br />Você pode ler mais sobre a competição e conferir os problemas da prova na{' '}
-			<a href="http://maratona.ime.usp.br/primfase19/">página da maratona</a>.<br />
-			<br /> O GEMA, pelo quinto ano seguido, consegue classificar pelo menos dois times para a final brasileira
-			da Maratona de Programação. Parabéns aos competidores!
-		</>
-    ),
-    image1: 1,
-	image2: 2,
-	date: '15/02/2020'
-};
-
-let n3body = {
-	id: 3,
-    title: 'Mais um ano de medalha para o GEMA!',
-    resume:  <> O time "Triple G" foi muito bem na final nacional, ganhando medalhas de prata e uma vaga na fase mundial do ICPC! </>,
-	body: (
-        <>
-		
-			A final nacional deste ano aconteceu em Campina Grande, nos dias 08 e 09 de novembro, com a participação de
-			70 times do país. Nesta fase, os times "Triple G" e "Um minuto para o fim do coffe" participaram, e
-			obtiveram ótimos resultados! Dos 13 problemas da prova, o time "Triple G" (à esquerda), integrado por
-			Guilherme "Tubone", Gabriel "Artista" Camargo e Gustavo "gsoares" Soares, conseguiu resolver 7, se
-			posicionando em sexto lugar e ganhando medalhas de prata. Com isso, o time classificou-se para a final mundial, 
-			que ocorrerá em junho de 2020 em Moscow, na Rússia! <br />
-			<br /> O time "Um minuto para o fim do coffee" (à direita), composto por André "Fakhoury", Frederico "Fred"
-			Bulhões e Raphael "Medeiros", solucionou 6 problemas, conseguindo o 12° no placar nacional! Você pode
-			acessar o ranking completo &nbsp; 
-			<a href="http://scorelatam.naquadah.com.br/">aqui</a>. <br />
-			<br /> O GEMA consegue mais uma vez um ótimo resultado na Maratona de Programação, parabéns aos
-			competidores!
-        </>
-    ),
-    image1: 3,
-	image2: 0, // imagem com índice 0 quando ela não existe
-	date: '15/02/2020'
 };
 
 let n4body = {
@@ -109,6 +112,7 @@ let n4body = {
 		</>
 	),
 	image1: 5,
+	imageCover: 5,
 	date: '01/03/2020'
 }
 
@@ -137,17 +141,114 @@ let n5body = {
 		</>
 	),
 	image1: 6,
+	imageCover: 6,
 	date: '01/03/2020'
 }
 
+let n6body = {
+	id: 6,
+	title: 'Você já viu o canal do GEMA no youtube?',
+	resume: <> Nós estamos disponibilizando conteúdo toda semana durante essa quarentena, para que você continue estudando de casa </>,
+	body: (
+		<>
+			<p>
+				Em março começou a quarentena no Brasil, e todas as escolas e universidades foram fechadas. Com isso, nós tinhamos que descobrir alguma forma 
+				de continuar nosso curso de programação e não perder a atenção dos nossos futuros medalhistas da USP São Carlos.
+			</p>
+			<p>
+				Começamos com a ideia de fazer reuniões online via Google Meets, mas logo a gente descobriu que os alunos gostam de assistir
+				às aulas quando têm vontade, no tempo deles e na velocidade (1.5x, recomendo) que quiserem. Assim as aulas ficam muito menos cansativas
+				e mais interessantes.
+			</p>
+
+
+			<p>
+				O GEMA não tem os melhores recursos pra gravação de videoaulas, mas acreditamos que a qualidade 
+				dos nossos vídeos está melhorando cada vez mais. Ficaríamos muito felizes com a sua visita no nosso canal:
+				<a href='https://www.youtube.com/channel/UCv051Zppxw4k11h3qlHxpGg'> https://www.youtube.com/channel/UCv051Zppxw4k11h3qlHxpGg </a>
+			</p>
+
+			<p>
+				As dúvidas ainda podem ser tiradas no nosso <a href='http://bit.ly/gema020'> grupo do telegram </a>, 
+				e os materiais das aulas estão disponíveis no <a href='https://github.com/icmcgema/gema'> github do gema </a>
+				ou na seção <a href='http://gema.icmc.usp.br/Material'> Materiais </a> aqui do site.
+			</p>
+
+			<p> Se inscreva pra não perder nenhum conteúdo e dê sua opinião nos comentários, queremos muito um feedback </p>
+
+			<p> Ah, e dá uma olhada nos vídeos dos finalistas mundiais na China e de Portugal! Pode ser você no futuro :D </p>
+		</>
+	),
+	image1: 0,
+	image2: 0,
+	imageCover: 7,
+	date: '22/05/2020'
+}
+
+let n7body = {
+	id: 7,
+	title: 'Como manter os estudos durante a quarentena?',
+	resume: <> Nesses tempos difíceis de pandemia, é difícil continuar a estudar e manter a motivação. 
+	Reunímos aqui algumas dicas e links que podem te ajudar. </>,
+	body: (
+		<>
+			<p>
+				A quarentena deixa todo mundo desanimado, e para algumas pessoas é difícil continuar a estudar em casa. Felizmente,
+				esse não é o caso do pessoal da computação, e pra isso vamos te ajudar com alguns links legais relacionados
+				à programação competitiva pra você não perder a motivação. #vaificartudobem
+			</p>
+
+			<p>
+				No youtube, um canal muito legal é o <a href='https://www.youtube.com/channel/UCBLr7ISa_YDy5qeATupf26w'> Algorithms Live! </a>, um autodenominado talk show que 
+				aborda algoritmos e problemas de CP com convidados em um estilo bem educativo. Eles fazem vídeos tanto para iniciantes como avançados.
+			</p>
+			
+			<p>
+				Outro canal que merece sua visita é o do <a href='https://www.youtube.com/channel/UCBr_Fu6q9iHYQCh13jmpbrg'> Errichto </a>, um competidor veterano
+				que já ganhou várias competições e doa seu tempo para ensinar o que aprendeu aos iniciantes. Seu conteúdo é focado em streams onde ele resolve problemas 
+				explicando o que está pensando durante o processo, mas também existem aulas sobre temas variados.
+			</p>
+
+			<p>
+				Um site muito bom para estudar algoritmos é o <a href='https://cp-algorithms.com/'>CP-Algorithms</a>, 
+				uma tradução comunitária do site russo E-Maxx para o inglês, que reúne explicações detalhadas sobre as 
+				técnicas mais relevantes usadas na programação competitiva.
+			</p>
+
+			<p>
+				Se você tem um notebook disponível em sua casa, é claro que você pode também participar dos contests
+				oferecidos pelos judges: <a href='https://codeforces.com/'> Codeforces </a>, <a href='https://www.codechef.com/'> Codechef </a>, 
+				<a href='https://atcoder.jp/'> Atcoder </a>, <a href='https://www.hackerrank.com/'> Hacker Rank</a>, 
+				<a href='https://leetcode.com/contest/'> Leetcode </a> e <a href='https://neps.academy'> Neps Academy (brasileiro)</a>.
+				Os quatro últimos são os mais amigáveis para os iniciantes. Participar desses contests é muito importante, porque o melhor jeito de estudar
+				CP é resolvendo problemas.
+			</p>
+
+			<p>
+				Espero que você se interesse por alguns desses links. É claro que você deve continuar vendo as aulas do GEMA tirando dúvidas com a gente.
+				
+			</p>
+			<p> Se cuida! <br/> #fiqueemcasa </p>
+		</>
+	),
+	image1: 0,
+	image2: 0,
+	imageCover: 8,
+	date: '22/05/2020'
+}
+
 news.push(n1body);
-news.push(n4body);
 news.push(n2body);
-news.push(n5body);
 news.push(n3body);
+news.push(n4body);
+news.push(n5body);
+news.push(n6body);
+news.push(n7body);
 
 // Retorna notícia de respectivo id recebido no props
 export default function getNews(props) {
 	let res = news.find((a) => a.id === props);
 	return res;
 }
+
+export const getNewsCount = () => news.length
