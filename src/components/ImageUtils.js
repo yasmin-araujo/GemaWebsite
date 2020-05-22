@@ -13,6 +13,7 @@ import Img3 from '../images/tripleg.jpg';
 import ImgAulas from '../images/aulas_gema.png'
 import ImgCamp from '../images/camp_gema.png';
 import ImgApresentacao from '../images/chamada_apresentacao.png'
+import ImgYoutube from '../images/youtube_channel_banner.png'
 
 // Indexação das imagens
 let img1 = { id: 1, image: Img1 };
@@ -21,6 +22,7 @@ let img3 = { id: 3, image: Img3 };
 let img4 = { id: 4, image: ImgAulas }
 let img5 = { id: 5, image: ImgCamp }
 let img6 = { id: 6, image: ImgApresentacao }
+let img7 = { id: 7, image: ImgYoutube }
 
 let photos = [];
 
@@ -30,6 +32,7 @@ photos.push(img3);
 photos.push(img4);
 photos.push(img5);
 photos.push(img6);
+photos.push(img7);
 
 // Retorna elemento imagem de acordo com o id fornecido
 export function imageElement(props) {

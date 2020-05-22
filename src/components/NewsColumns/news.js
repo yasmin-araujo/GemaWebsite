@@ -145,11 +145,52 @@ let n5body = {
 	date: '01/03/2020'
 }
 
+let n6body = {
+	id: 6,
+	title: 'Você já viu o canal do GEMA no youtube?',
+	resume: <> Nós estamos disponibilizando conteúdo toda semana durante essa quarentena, para que você continue estudando de casa </>,
+	body: (
+		<>
+			<p>
+				Em março começou a quarentena no Brasil, e todas as escolas e universidades foram fechadas. Com isso, nós tinhamos que descobrir alguma forma 
+				de continuar nosso curso de programação e não perder a atenção dos nossos futuros medalhistas da USP São Carlos.
+			</p>
+			<p>
+				Começamos com a ideia de fazer reuniões online via Google Meets, mas logo a gente descobriu que os alunos gostam de assistir
+				às aulas quando têm vontade, no tempo deles e na velocidade (1.5x, recomendo) que quiserem. Assim as aulas ficam muito menos cansativas
+				e mais interessantes.
+			</p>
+
+
+			<p>
+				O GEMA não tem os melhores recursos pra gravação de videoaulas, mas acreditamos que a qualidade 
+				dos nossos vídeos está melhorando cada vez mais. Ficaríamos muito felizes com a sua visita no nosso canal:
+				<a href='https://www.youtube.com/channel/UCv051Zppxw4k11h3qlHxpGg'> https://www.youtube.com/channel/UCv051Zppxw4k11h3qlHxpGg </a>
+			</p>
+
+			<p>
+				As dúvidas ainda podem ser tiradas no nosso <a href='http://bit.ly/gema020'> grupo do telegram </a>, 
+				e os materiais das aulas estão disponíveis no <a href='https://github.com/icmcgema/gema'> github do gema </a>
+				ou na seção <a href='http://gema.icmc.usp.br/Material'> Materiais </a> aqui do site.
+			</p>
+
+			<p> Se inscreva pra não perder nenhum conteúdo e dê sua opinião nos comentários, queremos muito um feedback </p>
+
+			<p> Ah, e dá uma olhada nos vídeos dos finalistas mundiais na China e de Portugal! Pode ser você no futuro :D </p>
+		</>
+	),
+	image1: 0,
+	image2: 0,
+	imageCover: 7,
+	date: '22/05/2020'
+}
+
 news.push(n1body);
 news.push(n2body);
 news.push(n3body);
 news.push(n4body);
 news.push(n5body);
+news.push(n6body);
 
 // Retorna notícia de respectivo id recebido no props
 export default function getNews(props) {
