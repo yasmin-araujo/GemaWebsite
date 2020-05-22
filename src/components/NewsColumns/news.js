@@ -9,8 +9,61 @@
 import React from 'react';
 let news = [];
 
-const n1body = {
+let n2body = {
 	id: 1,
+    title: 'O GEMA classificou para a nacional!',
+    resume:<> Confira os times que conseguiram se classificar para a final brasileira da competição! </>,
+	body: (
+		<>
+			A fase regional da maratona de programação aconteceu no dia 14 de setembro, na qual participaram 726 times
+			distribuídos em 47 sedes espalhadas pelo Brasil. Nesta fase, 7 times do ICMC foram até a sede de Piracicaba
+			competir, e conseguiram ótimos resultados!<br />
+			<br />
+			Os times "Triple G" e "Um minuto para o fim do coffe" conseguiram se classificar para a final brasileira da
+			competição, obtendo 11° e 12° lugares no ranking nacional. O detalhe é que para irem para a próxima fase, os
+			dois times deveriam ficar entre os top 15 do país, e conseguirem uma vaga na fase nacional, que acontecerá
+			em Campina Grande, em novembro.<br />
+			<br />Você pode ler mais sobre a competição e conferir os problemas da prova na{' '}
+			<a href="http://maratona.ime.usp.br/primfase19/">página da maratona</a>.<br />
+			<br /> O GEMA, pelo quinto ano seguido, consegue classificar pelo menos dois times para a final brasileira
+			da Maratona de Programação. Parabéns aos competidores!
+		</>
+    ),
+    image1: 1,
+	image2: 2,
+	imageCover: 1,
+	date: '15/02/2020'
+};
+
+let n3body = {
+	id: 2,
+    title: 'Mais um ano de medalha para o GEMA!',
+    resume:  <> O time "Triple G" foi muito bem na final nacional, ganhando medalhas de prata e uma vaga na fase mundial do ICPC! </>,
+	body: (
+        <>
+		
+			A final nacional deste ano aconteceu em Campina Grande, nos dias 08 e 09 de novembro, com a participação de
+			70 times do país. Nesta fase, os times "Triple G" e "Um minuto para o fim do coffe" participaram, e
+			obtiveram ótimos resultados! Dos 13 problemas da prova, o time "Triple G" (à esquerda), integrado por
+			Guilherme "Tubone", Gabriel "Artista" Camargo e Gustavo "gsoares" Soares, conseguiu resolver 7, se
+			posicionando em sexto lugar e ganhando medalhas de prata. Com isso, o time classificou-se para a final mundial, 
+			que ocorrerá em junho de 2020 em Moscow, na Rússia! <br />
+			<br /> O time "Um minuto para o fim do coffee" (à direita), composto por André "Fakhoury", Frederico "Fred"
+			Bulhões e Raphael "Medeiros", solucionou 6 problemas, conseguindo o 12° no placar nacional! Você pode
+			acessar o ranking completo &nbsp; 
+			<a href="http://scorelatam.naquadah.com.br/">aqui</a>. <br />
+			<br /> O GEMA consegue mais uma vez um ótimo resultado na Maratona de Programação, parabéns aos
+			competidores!
+        </>
+    ),
+    image1: 3,
+	image2: 0, // imagem com índice 0 quando ela não existe
+	imageCover: 3,
+	date: '15/02/2020'
+};
+
+const n1body = {
+	id: 3,
     title: 'O GEMA vai dar aulas de programação!',
     resume:  <> Fique atento às datas, as aulas de programação em C++ do GEMA começarão em breve! </>,
 	body: (
@@ -35,58 +88,8 @@ const n1body = {
     ),
     image1: 4,
 	image2: 0, // imagem com índice 0 quando ela não existe
+	imageCover: 4,
 	date: '01/03/2020'
-};
-
-let n2body = {
-	id: 2,
-    title: 'O GEMA classificou para a nacional!',
-    resume:<> Confira os times que conseguiram se classificar para a final brasileira da competição! </>,
-	body: (
-		<>
-			A fase regional da maratona de programação aconteceu no dia 14 de setembro, na qual participaram 726 times
-			distribuídos em 47 sedes espalhadas pelo Brasil. Nesta fase, 7 times do ICMC foram até a sede de Piracicaba
-			competir, e conseguiram ótimos resultados!<br />
-			<br />
-			Os times "Triple G" e "Um minuto para o fim do coffe" conseguiram se classificar para a final brasileira da
-			competição, obtendo 11° e 12° lugares no ranking nacional. O detalhe é que para irem para a próxima fase, os
-			dois times deveriam ficar entre os top 15 do país, e conseguirem uma vaga na fase nacional, que acontecerá
-			em Campina Grande, em novembro.<br />
-			<br />Você pode ler mais sobre a competição e conferir os problemas da prova na{' '}
-			<a href="http://maratona.ime.usp.br/primfase19/">página da maratona</a>.<br />
-			<br /> O GEMA, pelo quinto ano seguido, consegue classificar pelo menos dois times para a final brasileira
-			da Maratona de Programação. Parabéns aos competidores!
-		</>
-    ),
-    image1: 1,
-	image2: 2,
-	date: '15/02/2020'
-};
-
-let n3body = {
-	id: 3,
-    title: 'Mais um ano de medalha para o GEMA!',
-    resume:  <> O time "Triple G" foi muito bem na final nacional, ganhando medalhas de prata e uma vaga na fase mundial do ICPC! </>,
-	body: (
-        <>
-		
-			A final nacional deste ano aconteceu em Campina Grande, nos dias 08 e 09 de novembro, com a participação de
-			70 times do país. Nesta fase, os times "Triple G" e "Um minuto para o fim do coffe" participaram, e
-			obtiveram ótimos resultados! Dos 13 problemas da prova, o time "Triple G" (à esquerda), integrado por
-			Guilherme "Tubone", Gabriel "Artista" Camargo e Gustavo "gsoares" Soares, conseguiu resolver 7, se
-			posicionando em sexto lugar e ganhando medalhas de prata. Com isso, o time classificou-se para a final mundial, 
-			que ocorrerá em junho de 2020 em Moscow, na Rússia! <br />
-			<br /> O time "Um minuto para o fim do coffee" (à direita), composto por André "Fakhoury", Frederico "Fred"
-			Bulhões e Raphael "Medeiros", solucionou 6 problemas, conseguindo o 12° no placar nacional! Você pode
-			acessar o ranking completo &nbsp; 
-			<a href="http://scorelatam.naquadah.com.br/">aqui</a>. <br />
-			<br /> O GEMA consegue mais uma vez um ótimo resultado na Maratona de Programação, parabéns aos
-			competidores!
-        </>
-    ),
-    image1: 3,
-	image2: 0, // imagem com índice 0 quando ela não existe
-	date: '15/02/2020'
 };
 
 let n4body = {
@@ -109,6 +112,7 @@ let n4body = {
 		</>
 	),
 	image1: 5,
+	imageCover: 5,
 	date: '01/03/2020'
 }
 
@@ -137,17 +141,20 @@ let n5body = {
 		</>
 	),
 	image1: 6,
+	imageCover: 6,
 	date: '01/03/2020'
 }
 
 news.push(n1body);
-news.push(n4body);
 news.push(n2body);
-news.push(n5body);
 news.push(n3body);
+news.push(n4body);
+news.push(n5body);
 
 // Retorna notícia de respectivo id recebido no props
 export default function getNews(props) {
 	let res = news.find((a) => a.id === props);
 	return res;
 }
+
+export const getNewsCount = () => news.length
