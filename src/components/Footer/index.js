@@ -9,17 +9,17 @@ export default function Footer() {
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-md-4 footer-item">
-						<span className="copyright">GEMA - ICMC/USP 2019</span>
+						<span className="copyright">GEMA - ICMC/USP 2020</span>
 					</div>
 					<div className="col-md-4 footer-item">
 						<ul className="list-inline social-buttons">
 							<li className="list-inline-item">
-								<a href="https://www.facebook.com/gemaicmc/">
+								<a href="https://www.facebook.com/gemaicmc/" rel="noopener noreferrer" target="_blank">
 									<img src={Logo_Facebook} alt="Facebook" className="logos"/>
 								</a>
 							</li>
 							<li className="list-inline-item">
-								<a href="https://github.com/lusmoura/CompetitiveProgramming-Classes">
+								<a href="https://github.com/icmcgema" rel="noopener noreferrer" target="_blank">
 									<img src={Logo_Github} alt="Github" className="logos"/>
 								</a>
 							</li>

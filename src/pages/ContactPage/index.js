@@ -89,7 +89,7 @@ function ContactPage() {
 								<span>
 									<img className="icon-img" src={GithubIcon} />{' '}
 								</span>&nbsp;
-								<a href="https://github.com/lusmoura/CompetitiveProgramming-Classes">Link do Github</a>
+								<a href="https://github.com/icmcgema">Link do Github</a>
 							</p>
 						</div>
 					</Col>
@@ -152,7 +152,7 @@ function ContactPage() {
 							<span>
 								<img className="icon-img" src={GithubIcon} />{' '}
 							</span>&nbsp;
-							<a href="https://github.com/lusmoura/CompetitiveProgramming-Classes">Link do Github</a>
+							<a href="https://github.com/icmcgema">Link do Github</a>
 						</p>
 						<p>
 							<span>
