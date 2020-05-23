@@ -72,11 +72,11 @@
 
 #main-material .list-group-item-action {
     text-align: left;
-    background-color: #fdfbfe;
+    background-color: #fdfbfee3;
 }
 
 #main-material .list-group-item-action:hover {
-	background-color: #f8f9fa;
+	background-color: #f9f8fade;
 }
 
 #main-material .list-group {

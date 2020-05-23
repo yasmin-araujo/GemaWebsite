@@ -39,6 +39,7 @@ h3 {
 	letter-spacing: 1px;
 	color: var(--color-1-medium);
 	text-align: center;
+	overflow-y: hidden;
 }
 
 .container-fluid,
