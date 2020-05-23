@@ -1,6 +1,6 @@
 # Complexidade 
 
-## A ideia geral: Analisando a eficiência e o tempo de execução de algoritmos.  :runner:
+## A ideia geral: Analisando a eficiência e o tempo de execução de algoritmos. 
 
 Em programação competitiva, a eficiência de um programa e o seu tempo de execução são fatores cruciais e devem ser analisados.
 Eu imagino que vocês, que estão lendo esse blog e já resolveram exercícios de programação competitiva, já tiveram problemas com tempo de execução (os famosos TLE - *time limit exceeded*). Talvez não souberam como lidar ou analisar a fonte de tais problemas, então aqui estamos: é hora de explicar porque certos códigos não são pode executados abaixo de um certo limite de tempo dada uma certa entrada.
@@ -85,7 +85,7 @@ Esse código executa o *printf* e a atribução **n** vezes, certo? Portanto, ve
   Exemplo 3- Um código com função `f(n) = n² * log(n) + 300n * log(n)` é `O(n² * log(n)`
 
 
-## Mas como calcular efetivamente a complexidade de um algoritmo? :computer:
+## Mas como calcular efetivamente a complexidade de um algoritmo?
 
 Boa notícia: para calcular a complexidade de um algorítmo não é preciso encontrar a função que o define explicitamente. Muitas vezes essas funções tem coeficientes estranhos e são difíceis de calcular. Como o que importa para a gente é apenas o maior grau da equação, podemos focar nele.
 
@@ -128,7 +128,7 @@ int y = a - b;
 
 Dizemos que a complexidade é **O(1)** ou constante, uma vez que o código não depende de n, e sempre executa um número constante de operações.
 
-## O que todos estávamos esperando: a estimativa do tempo :clock1: 
+## O que todos estávamos esperando: a estimativa do tempo 
 
 Chegamos então ao que todos queremos saber:
 
@@ -161,13 +161,13 @@ for(int i = 0; i < n; i++){
 }
 ```
 
-   <b>  O código acima é O(n³). Já que temos um loop interno que é executado n vezes sendo executado por um loop intermediário também executado n vezes (até agora já temos um algorítmo n²) que, por fim, é executado pelo loop mais externo, resultando num código O(n³).</b>
+   O código acima é **O(n³)**. Já que temos um **loop interno** que é executado **n vezes** sendo executado por um **loop intermediário** também executado **n vezes** (até agora já temos um algorítmo n²) que, por fim, é executado pelo **loop mais externo**, resultando num código O(n³).
 
 
 
 #### Digamos que queremos calcular a soma dos n primeiros números naturais. Quais são as diferentes formas de resolver esse problema? Qual é a diferença de eficiência entre elas?
   
-  <b> Uma primeira maneira de pensar no problema é a versão <i>ad-hoc</i> da solução, ou seja, simplesmente somar os n primeiros termos. Da seguinte forma: </b>
+   Uma primeira maneira de pensar no problema é a versão <i>ad-hoc</i> da solução, ou seja, simplesmente **somar os n primeiros termos**. Da seguinte forma: 
   
   ```c++
   int sum = 0;
@@ -176,12 +176,12 @@ for(int i = 0; i < n; i++){
   }
   ```
   
-  <b> Essa solução é O(n), pois é preciso percorrer os n número somando-os... e podemos fazer melhor! Uma segunda maneira seria usar a fórmula da soma de P.A.! </b>
+   Essa solução é **O(n)**, pois é preciso percorrer os n número somando-os... e podemos fazer melhor! Uma segunda maneira seria usar a fórmula da soma de P.A.! 
   
   ```c++
   int sum = ((1+n)*n)/2;
   ```
   
-  <b> Essa solução é O(1), já que não é executada mais vezes para um valor maior de n, e portanto mais eficiente. <b>
+   Essa solução é **O(1)**, já que não é executada mais vezes para um valor maior de n, e portanto mais eficiente. 
   
 </details>

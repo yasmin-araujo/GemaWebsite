@@ -1,6 +1,6 @@
 # Funções
 
-## A teoria por trás:
+## A teoria por trás
 
 Até agora falamos de funções várias vezes e já até vimos exemplos. Finalmente é hora de explicar o que são, como funcionam e a utilidade delas.
 
@@ -19,7 +19,7 @@ tipo_do_retorno nome(parametros) {
 }
 
 ```
-## Os elementos básicos de uma função:
+## Os elementos básicos de uma função
 
 ### Temos quatro elementos principais que devem ser destacados:
 - **Tipo do Retorno**: uma função pode retornar (devolver) algo, como um valor, uma string, uma letra... é preciso declarar o tipo do dado que será retornado, sendo que esses tipos são os mesmos das variáveis que já vimos. Temos apenas um novo tipo: void - não retorna nada (a função só serve para executar as instruções).
@@ -27,7 +27,7 @@ tipo_do_retorno nome(parametros) {
 - **Parâmetros**: pode ser que precisemos enviar para a função algum valor. É aqui que ele entra. No cálculo da área de um triângulo, por exemplo, é necessário informar as medidas da base e da altura.
 - **Retorno**: utiliza-se a palavra **return** para indicar o valor que será retornado pela função.
 
-## Alguns exemplos:
+## Alguns exemplos
 
 ```c++
 //uma função que recebe dois inteiros e retorna um double

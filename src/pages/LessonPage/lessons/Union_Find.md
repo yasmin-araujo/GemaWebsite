@@ -520,24 +520,24 @@ int main() {
 }
 ```
 
-# Referências
+## Referências
 
 - [cp-algorithms](https://cp-algorithms.com/data_structures/disjoint_set_union.html)
 
-# Problemas
+## Problemas
 
-[Anansi's Cobweb](https://acm.timus.ru/problem.aspx?space=1&num=1671) ([Solução](https://ideone.com/RhGSBv))
+- [Anansi's Cobweb](https://acm.timus.ru/problem.aspx?space=1&num=1671) ([Solução](https://ideone.com/RhGSBv))
 
-[Strange Food Chain](https://www.spoj.com/problems/CHAIN/) ([Solução](https://ideone.com/zzEtfd))
+- [Strange Food Chain](https://www.spoj.com/problems/CHAIN/) ([Solução](https://ideone.com/zzEtfd))
 
-[Learning Languages](https://codeforces.com/problemset/problem/277/A) ([Solução](https://ideone.com/r6Hk7G))
+- [Learning Languages](https://codeforces.com/problemset/problem/277/A) ([Solução](https://ideone.com/r6Hk7G))
 
-[Mahmoud and a Dictionary](https://codeforces.com/problemset/problem/766/D) ([Solução](https://ideone.com/qeGv9K))
+- [Mahmoud and a Dictionary](https://codeforces.com/problemset/problem/766/D) ([Solução](https://ideone.com/qeGv9K))
 
-[Pictionary](https://codeforces.com/gym/102078/problem/A) ([Solução](https://ideone.com/xKBHAb))
+- [Pictionary](https://codeforces.com/gym/102078/problem/A) ([Solução](https://ideone.com/xKBHAb))
 
-[J - Trucks](https://codeforces.com/gym/101473/attachments) ([Solução](https://ideone.com/cLt13Z))
+- [J - Trucks](https://codeforces.com/gym/101473/attachments) ([Solução](https://ideone.com/cLt13Z))
 
-[Energia](https://neps.academy/problem/487) ([Solução](https://ideone.com/fvvOpf))
+- [Energia](https://neps.academy/problem/487) ([Solução](https://ideone.com/fvvOpf))
 
-[G - Hunting leshys](https://codeforces.com/gym/102299/) ([Solução](https://ideone.com/HdghtU))
+- [G - Hunting leshys](https://codeforces.com/gym/102299/) ([Solução](https://ideone.com/HdghtU))
