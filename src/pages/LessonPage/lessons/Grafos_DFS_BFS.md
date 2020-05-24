@@ -29,13 +29,21 @@ Grafos tem muitas utilidades no dia a dia (em programação competitiva e fora d
 
 ### Conceitos importantes
 - **Ordem**: a quantidade de vértices de um grafo.
+
 - **Adjacência**: dois nós ligados por uma aresta são ditos adjacentes.
+
 - **Grau**: o grau de um nó representa a quantidade de nós que ele tem como adjacentes.
+
 - **Caminho**: um caminho é uma sequência de arestas que liga dois vértices.
+
 - **Direcionado**: um grafo pode ser ou não direcionado. Num grafo não direcionado (como na primeira imagem), se temos uma aresta A->B, também temos a aresta B->A. Já num grafo direcionado as arestas são independentes, isto é, a existência da aresta A->B não diz nada sobre a B->A.
+
 - **Ponderado**: um grafo ponderado é um grafo no qual as arestas tem pesos, como na figura abaixo.
+
 - **Cíclico**: um grafo é dito ciclíco quando há nele um ciclo, ou seja, um caminho que sai de um nó A e retorna a ele.
+
 - **Conexo**: um grafo é dito conexo quando há pelo menos um caminho entre quaisquer dois pares de vértices.
+
 - **Componente conexa**: mesmo que não haja um caminho entre todos os vértices do grafo, é possível dividí-lo em subgrafos que tenham esses caminhos. Dessa forma, temos as componentes conexas, ou seja, os subgrafos que são conexos.
 
 ## Implementação
@@ -137,11 +145,17 @@ Vamos ver o passo a passo para o grafo a seguir:
 ```
 
 - O percurso começa no nó 1. 
+
 - Em seguida, o seu primeiro filho é processado. Nesse momento temos o caminho (1, 2). 
+
 - Agora vamos para o primeiro filho do 2 e temos (1, 2, 4) e por fim para o primeiro filho do 4, tendo (1, 2, 4, 5). 
+
 - Agora não é mais possível "descer", então vamos voltar um passo para (1, 2, 4) e processar o próximo filho do 4: (1, 2, 4, 6). 
+
 - Novamente, precisamos voltar e temos, (1, 2, 4), porém todos os filhos do 4 já foram processados, então voltamos de novo, tendo (1, 2). 
+
 - Como todos os filhos do 2 foram processados, voltamos para (1) e processamos o segundo filho de 1, (1, 2). 
+
 - Nenhum dos dois possui filhos sem processar, então o algoritmo apenas retorna e acaba o processamento.
 
 É importante notar que devemos ter alguma maneira de marcar os nós como **visitados** (ou processados), para que não entremos num loop e sigamos na busca. Por isso, teremos um vetor auxiliar no qual iremos, para cá nó, identificar se ele já foi ou não processado.
@@ -201,11 +215,17 @@ Vamos ver o passo a passo para o mesmo grafo utilizado na DFS:
 ```
 
 - O percurso começa no nó 1. 
+
 - Em seguida, o seu primeiro filho é processado. Nesse momento temos o caminho (1, 2). 
+
 - Depois processamos seu segundo filho, temos, assim (1, 2, 3). O primeiro nó acabou de ser processado, então temos (2, 3). 
+
 - O próximo nó a ser processado será o 2, para isso, vamos adicionar seus filhos no caminho (2, 3, 4). Done, próximo! 
+
 - Processemos o 3. Como ele não possui filhos, só seguimos em frente, tendo (4).
+
 - Começemos a processar o nó 4. Seus filhos são percorridos e temos (4, 5, 6). Ao terminar de processá-lo, resta (5, 6)
+
 - Processamos o nó 5, que não possui filhos e por último o nó 6, que também não possui.
 
 Ou seja, aconteceria o seguinte:

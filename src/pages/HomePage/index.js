@@ -33,7 +33,7 @@ function HomePage() {
 												</a>
 											</li>
 											<li className="list-inline-item">
-												<a href="https://github.com/lusmoura/CompetitiveProgramming-Classes">
+												<a href="https://github.com/icmcgema">
 													<img src={Logo_Github} alt="Github" className="logos" />
 												</a>
 											</li>
