@@ -17,6 +17,7 @@ then
     echo "Removing content from /var/www/html folder..."
     sudo rm -rf /var/www/html/*
     sudo cp -r build/* /var/www/html/
+    sudo cp ./src/images/site_preview.png /var/www/html/static/media/preview.png
     echo "Creating .htaccess file for apache to use"
     sudo touch /var/www/html/.htaccess
 
