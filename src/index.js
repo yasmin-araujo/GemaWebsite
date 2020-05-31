@@ -12,9 +12,25 @@ import NewsPage from './pages/NewsPage/index';
 import ContactPage from './pages/ContactPage/index';
 import ContestPage from './pages/ContestPage/index';
 import LessonPage from './pages/LessonPage/index';
+import WallpaperImage from './images/wallpaper.png'
 
 import { BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router'
+
+// Insert some metadata to the site, to create link previews
+
+function createOgMetaTag(name, content) {
+	const meta = document.createElement('meta')
+	meta.setAttribute('property', `og:${name}`)
+	meta.setAttribute('content', content)
+	console.log(meta)
+	console.log(document.querySelector('head'))
+	document.querySelector('head').appendChild(meta)
+}
+
+createOgMetaTag('locale', 'pt_BR')
+createOgMetaTag('site_name', 'Grupo de Estudos para Maratona de Programação')
+createOgMetaTag('image', `gema.icmc.usp.br${WallpaperImage}`)
 
 function App(){
     return (
