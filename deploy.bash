@@ -15,18 +15,19 @@ then
     echo "Updating the site and moving old contents to directory at $name..."
     sudo cp -r /var/www/html/* $name/
     echo "Removing content from /var/www/html folder..."
-    sudo rm -rf /var/www/html
-    sudo cp -r build/* /var/www/html
+    sudo rm -rf /var/www/html/*
+    sudo cp -r build/* /var/www/html/
+    sudo cp ./src/images/site_preview.png /var/www/html/static/media/preview.png
     echo "Creating .htaccess file for apache to use"
     sudo touch /var/www/html/.htaccess
 
     > /var/www/html/.htaccess # truncate the file
-    echo "RewriteEngine On" >> /var/www/html/.htaccess
-    echo "RewriteBase /" >> /var/www/html/.htaccess 
-    echo "RewriteCond %{REQUEST_FILENAME} !-f" >> /var/www/html/.htaccess
-    echo "RewriteCond %{REQUEST_FILENAME} !-d" >> /var/www/html/.htaccess
-    echo "RewriteCond %{REQUEST_FILENAME} !-l" >> /var/www/html/.htaccess
-    echo "RewriteRule ^.*$ / [L,QSA]" >> /var/www/html/.htaccess
+    sudo echo "RewriteEngine On" >> /var/www/html/.htaccess
+    sudo echo "RewriteBase /" >> /var/www/html/.htaccess 
+    sudo echo "RewriteCond %{REQUEST_FILENAME} !-f" >> /var/www/html/.htaccess
+    sudo echo "RewriteCond %{REQUEST_FILENAME} !-d" >> /var/www/html/.htaccess
+    sudo echo "RewriteCond %{REQUEST_FILENAME} !-l" >> /var/www/html/.htaccess
+    sudo echo "RewriteRule ^.*$ / [L,QSA]" >> /var/www/html/.htaccess
 
     echo "Okay, done"
 
