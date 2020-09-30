@@ -25,6 +25,7 @@ const classes = [
 	{ title: 'Grafos (DFS e BFS)', url: '/Material/Aula/Grafos_DFS_BFS' },
 	{ title: 'Teoria dos Números', url: '/Material/Aula/Teoria_dos_Numeros' },
 	{ title: 'Union Find', url: '/Material/Aula/Union_Find' },
+	{ title: 'Ordenação Topológica', url: '/Material/Aula/Ordenacao_Topologica' },
 ]
 
 // Links de materiais relevantes

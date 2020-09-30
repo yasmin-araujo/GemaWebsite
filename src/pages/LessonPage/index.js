@@ -52,6 +52,7 @@ const extension = {
 	"Teoria_dos_Numeros": "ipynb",
 	"Grafos_DFS_BFS": "md",
 	"Union_Find": "md",
+	"Ordenacao_Topologica": "ipynb",
 }
 
 // xs={12} sm={12} md={12} lg={12} xl={12} ⯇ 🡄
