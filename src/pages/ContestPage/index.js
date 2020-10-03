@@ -16,8 +16,11 @@ let names = []
 
 function contestFilter(contest, includeFilter, excludeFilter, durmin, durmax) {
 	let dur = contest.durationSeconds / 60
-	return (includeFilter === '' || contest.name.includes(includeFilter)) &&
-		(excludeFilter === '' || !contest.name.includes(excludeFilter)) &&
+	contest.name = contest.name.trim().toUpperCase()
+	let includeArr = includeFilter.toUpperCase().split(',').map(x => x.trim())
+	let excludeArr = excludeFilter.toUpperCase().split(',').map(x => x.trim())
+	return (includeFilter === '' || includeArr.reduce((cur, val) => cur && contest.name.includes(val), true)) &&
+		(excludeFilter === '' || excludeArr.reduce((cur, val) => cur && !contest.name.includes(val), true)) &&
 		(dur >= durmin && dur <= durmax) &&
 		contest.phase === 'FINISHED'
 }
@@ -164,15 +167,15 @@ function ContestPage() {
 								</Col>
 							</Form.Group>
 							<Form.Group controlId="includes">
-								<Form.Label>O nome tem que incluir:</Form.Label>
+								<Form.Label>O nome tem que incluir todos (lista de tokens, separados por vírgula):</Form.Label>
 								<Col>
-									<Form.Control value={includes} onChange={e => setIncludes(e.target.value)} placeholder="Ex: Educational" />
+									<Form.Control value={includes} onChange={e => setIncludes(e.target.value)} placeholder="Ex: Educational, Rated" />
 								</Col>
 							</Form.Group>
 							<Form.Group controlId="excludes">
-								<Form.Label>O nome tem que excluir:</Form.Label>
+								<Form.Label>O nome tem que excluir todos (lista de tokens, separados por vírgula):</Form.Label>
 								<Col>
-									<Form.Control value={excludes} onChange={e => setExcludes(e.target.value)} placeholder="Ex: VK Cup" />
+									<Form.Control value={excludes} onChange={e => setExcludes(e.target.value)} placeholder="Ex: VK Cup, Malaysia" />
 								</Col>
 							</Form.Group>
 							<Form.Label>Duração em minutos:</Form.Label>
