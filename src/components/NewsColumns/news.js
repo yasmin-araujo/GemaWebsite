@@ -237,6 +237,39 @@ let n7body = {
 	date: '22/05/2020'
 }
 
+let n8body = {
+	id: 8,
+    title: 'Mais um ano de dois times classificados para a nacional!',
+    resume:<> Em 2020, pela quinta vez consecutiva o GEMA consegue classificar dois times para a fase brasileira da Maratona de Programação. </>,
+	body: (
+		<>
+
+			<p>
+				A fase regional da Maratona de Programação, que geralmente acontece em várias escolas-sede ao redor do Brasil, este ano aconteceu de forma online. 
+				Nos anos anteriores, os times da USP de São Carlos viajavam até Piracicaba pra realizar essa fase da competição, mas dessa vez os competidores fizeram a prova em suas casas, o que resultou em algumas mudanças importantes no teor da competição. Enquanto antes somente um computador era usado pra resolver os problemas, agora três puderam ser usados ao mesmo tempo. Além disso, as inscrições deste ano foram abertas e gratuitas, e para evitar trapaças, dessa vez só os competidores tiveram acesso a prova, e por isso não aconteceram provas de Café com Leite nem <i> mirrors </i> online.
+			</p>
+
+			<p>
+				Nesse ano, com 799 times inscritos de 196 escolas, a prova foi realizada no dia 14 de novembro, um sábado. Os 15 problemas da prova foram bem distribuídos em dificuldade, mas ainda assim 3 problemas (D, J e O) ficaram sem soluções de nenhum time. A USP São Carlos, que geralmente leva 7 times para esta fase regional, este ano levou 16. Todos tiveram ótimos resultados, com pelo menos dois problemas da prova resolvidos.
+			</p>
+			<p>
+				Pela quinta vez consecutiva, dois times da USP São Carlos conseguiram novamente se classificar para a final brasileira, que acontecerá também de forma online, com data ainda a ser definida. O time "deitando no gramado", composto por André Fakhoury, Frederico Bulhões e Lucas Turci resolveu 9 problemas, conseguindo o segundo lugar no placar brasileiro geral. O time "cuscuz com cachaça", composto por Dikson Ferreira, Fernando Lincoln e Thiago Queiroz, resolvendo 8 problemas, ficou no décimo segundo lugar geral. O placar completo pode ser consultado <a href="http://maratona.sbc.org.br/primfase20/reports/ScoreBrasil.html"> aqui</a>.
+			</p>
+
+
+			<p>
+				Mais informações sobre a prova (inclusive um editorial) e os resultados podem ser consultadas <a href="http://maratona.sbc.org.br/primfase20.html">aqui</a>.
+			</p>
+
+			<p> Parabéns aos competidores! </p>
+		</>
+    ),
+    image1: 10,
+	image2: 0,
+	imageCover: 9,
+	date: '24/11/2020'
+};
+
 news.push(n1body);
 news.push(n2body);
 news.push(n3body);
@@ -244,6 +277,7 @@ news.push(n4body);
 news.push(n5body);
 news.push(n6body);
 news.push(n7body);
+news.push(n8body);
 
 // Retorna notícia de respectivo id recebido no props
 export default function getNews(props) {
