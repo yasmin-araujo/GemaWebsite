@@ -270,6 +270,35 @@ let n8body = {
 	date: '24/11/2020'
 };
 
+let n9body = {
+	id: 9,
+    title: 'Novas séries de aulas do GEMA',
+    resume:<> No ano passado, com a situação da pandemia, o principal meio pelo qual conseguimos ensinar programação foi o <i>youtube</i>. Nessas férias de 2021, vai ter novidade no canal! </>,
+	body: (
+		<>
+
+			<p>
+				Como vocês sabem, o EAD se tornou o principal (e talvez único) meio de ministrar aulas no ano passado, e o GEMA também entrou no barco. 
+				No primeiro semestre de 2020, nós publicamos várias vídeo-aulas de programação básica em C++. No segundo semestre, nós tivemos reuniões semanais que também foram gravadas e publicadas no canal. Ao todo, tivemos mais de 5.000 visualizações em nossos vídeos, o que significa um alcance de público muito importante para nós.
+			</p>
+
+			<p>
+				Nessas férias, para manter o interesse dos estudantes que querem continuar treinando para a maratona de programação e OBI, nós vamos fazer novas séries de vídeos: dessa vez mais curtos, para promover conteúdo sem ser cansativo para o público (afinal, a gente está de férias para descansar né).
+			</p>
+			<p>
+				A partir da segunda semana de Janeiro, espere novidades no <a href='https://www.youtube.com/channel/UCv051Zppxw4k11h3qlHxpGg'>canal do GEMA do youtube</a>: nós vamos te ensinar <i>tricks</i> e resoluções de problemas nestas férias prolongadas.
+			</p>
+			<p>
+				Esperamos vocês!
+			</p>
+		</>
+    ),
+    image1: 0,
+	image2: 0,
+	imageCover: 11,
+	date: '04/01/2021'
+};
+
 news.push(n1body);
 news.push(n2body);
 news.push(n3body);
@@ -278,6 +307,7 @@ news.push(n5body);
 news.push(n6body);
 news.push(n7body);
 news.push(n8body);
+news.push(n9body);
 
 // Retorna notícia de respectivo id recebido no props
 export default function getNews(props) {
