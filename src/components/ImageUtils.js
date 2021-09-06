@@ -18,6 +18,7 @@ import ImgSanchaoEstudando from '../images/sanchao_estudando.jpg'
 import ImgNacional2020 from '../images/nacional2020.png'
 import ImgFotosTimesClassificados2020 from '../images/montagem-nacional.png'
 import GemaAndYoutube from '../images/gema_and_youtube.png'
+import PlacarNacional2021 from '../images/placar-nacional-2021.png'
 
 // Indexação das imagens
 let img1 = { id: 1, image: Img1 };
@@ -31,6 +32,7 @@ let img8 = { id: 8, image: ImgSanchaoEstudando }
 let img9 = { id: 9, image: ImgNacional2020 }
 let img10 = { id: 10, image: ImgFotosTimesClassificados2020 }
 let img11 = { id: 11, image: GemaAndYoutube }
+let img12 = { id: 12, image: PlacarNacional2021 }
 
 
 
@@ -47,6 +49,7 @@ photos.push(img8);
 photos.push(img9);
 photos.push(img10);
 photos.push(img11);
+photos.push(img12);
 
 // Retorna elemento imagem de acordo com o id fornecido
 export function imageElement(props) {

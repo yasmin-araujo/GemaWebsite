@@ -299,6 +299,47 @@ let n9body = {
 	date: '04/01/2021'
 };
 
+let n10body = {
+	id: 10,
+    title: 'Classificados para a mundial novamente!',
+    resume:<> O time <i>deitando no gramado</i>, composto por André Fakhoury, Frederico Bulhões e Lucas Turci, fez 9 problemas, terminando a prova na quarta colocação (no placar brasileiro), o que garantiu a medalha de prata e a classificação para a fase mundial da competição! </>,
+	body: (
+		<>
+
+			<p>
+			A fase nacional da Maratona de Programação, anteriormente realizada em uma única sede física para todos os times classificados do Brasil 
+			(e que estava planejada para Gramado-RS neste ano), ocorreu de forma online devido à pandemia de Covid-19. 
+			O ICMC classificou dois times na fase regional: O <i>deitando no gramado</i> e <i>cuscuz com cachaça.</i>
+			</p>
+
+			<p>
+			A prova da nacional esse ano contou com 14 problemas, sendo que o time melhor colocado fez 10. 
+			Você pode ver o placar <a href="https://scorelatam.naquadah.com.br/latam-2020/#">neste link</a>.
+			</p>
+			<p>
+				<img alt="Foto dos integrantes do deitando no gramado" style={{width: "100%"}} src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3b2c7bbf-9442-441a-8225-ed8e502af704/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210906%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210906T145200Z&X-Amz-Expires=86400&X-Amz-Signature=30d841e478d18e99e0e591587aecf44062f5080880419461934bf72bdd50ce0c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22"/>
+			</p>
+			<p>
+			O time <i>deitando no gramado</i>, composto por André Fakhoury, Frederico Bulhões e Lucas Turci, fez 9 problemas, terminando a prova na quarta colocação (no placar brasileiro), 
+			o que garantiu a medalha de prata e a classificação para a fase mundial da competição!
+			</p>
+			<p>
+				Já o time <i></i>cuscuz com cachaça*, composto por Dikson Santos, Fernando Lincoln e Thiago Queiroz, também foi muito bem, fez 6 problemas e terminou a prova na 19ª colocação.
+			</p>
+			<p>
+				<img alt="Foto dos integrantes do cuscuz com cachaça" style={{width: "100%"}} src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a929b674-cf46-4497-be58-664ea57c3bf1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210905%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210905T220640Z&X-Amz-Expires=86400&X-Amz-Signature=e33c86bd852ec050168a46568538f5bf653d7f61a48a44699c642c4fdeb7f5a9&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22"/>
+			</p>
+			<p>
+			Ainda não se tem muitas informações sobre o Mundial de 2020-21, porém acredita-se que ele será realizado em Bangladesh, em 2022.
+			</p>
+		</>
+    ),
+    image1: 0,
+	image2: 0,
+	imageCover: 12,
+	date: '04/01/2021'
+};
+
 news.push(n1body);
 news.push(n2body);
 news.push(n3body);
@@ -308,6 +349,7 @@ news.push(n6body);
 news.push(n7body);
 news.push(n8body);
 news.push(n9body);
+news.push(n10body);
 
 // Retorna notícia de respectivo id recebido no props
 export default function getNews(props) {
